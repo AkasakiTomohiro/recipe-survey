@@ -26,14 +26,7 @@ export default async function Home({ params: { lng } }: HomeProps) {
             rel="noopener noreferrer"
           >
             By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            <span className="i-logos-vercel w-24 h-6"></span>
           </a>
         </div>
       </div>
