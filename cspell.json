@@ -4,7 +4,9 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
-        "languagedetector"
+        "languagedetector",
+        "nextui",
+        "tailwindcss"
     ],
     "ignoreWords": [],
     "import": []
