@@ -5476,6 +5476,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:^7.6.3":
+  version: 7.6.4
+  resolution: "@storybook/addon-a11y@npm:7.6.4"
+  dependencies:
+    "@storybook/addon-highlight": "npm:7.6.4"
+    axe-core: "npm:^4.2.0"
+  checksum: a4195ce7847c52669d8201c6414f651c3b7cde13dbb649840d6d87d88cdc421442ba2bd11cc3c55844e9871fa1c3e403135da418ba5241b747f53baff0c548a8
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:7.6.1":
   version: 7.6.1
   resolution: "@storybook/addon-actions@npm:7.6.1"
@@ -5590,6 +5600,15 @@ __metadata:
   dependencies:
     "@storybook/global": "npm:^5.0.0"
   checksum: acecfa00e685ef01caa0d5bb055b6bcf0a23ffba07588f93ade189dffe362f2cdd641d42f5b5b6c70077d3b310a0d268f0104741bc39ca454ce5a30de82f142f
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.4":
+  version: 7.6.4
+  resolution: "@storybook/addon-highlight@npm:7.6.4"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 7578f4d008eccb3ea4f3db09671c7728a1f77a5deacca93edec3d22a4de2ecaa119f19bb995917d0a00214c3bb6cc96446f4a66191c0cb5a4c5812524b55d494
   languageName: node
   linkType: hard
 
@@ -8290,6 +8309,13 @@ __metadata:
   version: 4.7.0
   resolution: "axe-core@npm:4.7.0"
   checksum: 89ac5712b5932ac7d23398b4cb5ba081c394a086e343acc68ba49c83472706e18e0799804e8388c779dcdacc465377deb29f2714241d3fbb389cf3a6b275c9ba
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.8.2
+  resolution: "axe-core@npm:4.8.2"
+  checksum: ad9e1125ba226bbc73d442996d8b9b35fed9af8bcfa995831e29c3d6b8ddb0d16bc7d18c66c5a685211296ee99fe966ae4d59051ca6fbef2a7ee7408322b9dbe
   languageName: node
   linkType: hard
 
@@ -16263,6 +16289,7 @@ __metadata:
     "@iconify/json": "npm:^2.2.152"
     "@nextui-org/react": "npm:^2.2.9"
     "@playwright/test": "npm:^1.40.1"
+    "@storybook/addon-a11y": "npm:^7.6.3"
     "@storybook/addon-coverage": "npm:^1.0.0"
     "@storybook/addon-essentials": "npm:7.6.1"
     "@storybook/addon-interactions": "npm:7.6.1"
