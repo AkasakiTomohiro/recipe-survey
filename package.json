@@ -45,6 +45,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "chromatic": "^10.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "eslint-plugin-storybook": "^0.6.15",
@@ -59,5 +60,7 @@
     "node": "20.10.0",
     "npm": "10.2.3",
     "yarn": "4.0.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "recipe-survey@0.1.0"
 }
