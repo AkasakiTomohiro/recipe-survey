@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
+import {redirect} from 'next/navigation';
 import { Inter } from 'next/font/google'
-import { dir } from 'i18next'
 import './globals.css'
+import { defaultLocale, locales } from '@/i18n/i18n';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 export type RootLayoutProps = {
   children: React.ReactNode,
   params: {
-    lng: string
+    locale: string
   }
 }
 
@@ -21,8 +22,9 @@ export default function RootLayout({
   children,
   params
 }: RootLayoutProps) {
+  if (!locales.includes(params.locale as any)) redirect(`/${defaultLocale}`);
   return (
-    <html  lang={params.lng} dir={dir(params.lng)}>
+    <html lang={params.locale}>
       <body className={inter.className}>{children}</body>
     </html>
   )

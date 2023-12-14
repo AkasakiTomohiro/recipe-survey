@@ -1,14 +1,17 @@
+import { SampleComponent } from '@/components/SampleComponent';
 import Image from 'next/image'
+import {getTranslations} from 'next-intl/server';
 
 export type HomeProps = {
   params: {
     // lng: Languages
-    lng: any
+    lang: any
   }
 }
 
-export default async function Home({ params: { lng } }: HomeProps) {
-  // const { t } = await useTranslation(lng, "translation");
+export default async function Home({ params: { lang } }: HomeProps) {
+  const t = await getTranslations({lang, namespace: 'translation'});
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -55,7 +58,7 @@ export default async function Home({ params: { lng } }: HomeProps) {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {/* {t("docs")}{' '} */}
+            <SampleComponent />
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -72,7 +75,7 @@ export default async function Home({ params: { lng } }: HomeProps) {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
+            {t('learn')}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
