@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
+import { useTransLocations } from "@/i18n";
 
 export const SampleComponent = (): JSX.Element => {
-  const t = useTranslations('translation');
+  const t = useTransLocations('translation');
   return (<>{t("docs")}{' '}</>)
 }
