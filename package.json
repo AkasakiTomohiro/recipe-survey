@@ -11,13 +11,16 @@
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "test-storybook:update": "test-storybook --updateSnapshot",
-    "test-storybook:coverage": "test-storybook --coverage"
+    "test-storybook:coverage": "test-storybook --coverage && nyc report --reporter=text --reporter=lcov -t coverage/storybook",
+    "install-playwright": "yarn create playwright"
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.4.0",
     "accept-language": "^3.0.18",
     "next": "14.0.3",
+    "next-i18next": "^15.0.0",
     "next-intl": "^3.3.2",
+    "nyc": "^15.1.0",
     "react": "^18",
     "react-cookie": "^6.1.1",
     "react-dom": "^18"

@@ -7160,7 +7160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hoist-non-react-statics@npm:^3.3.1":
+"@types/hoist-non-react-statics@npm:^3.3.1, @types/hoist-non-react-statics@npm:^3.3.4":
   version: 3.3.5
   resolution: "@types/hoist-non-react-statics@npm:3.3.5"
   dependencies:
@@ -9502,6 +9502,13 @@ __metadata:
   version: 3.33.3
   resolution: "core-js-pure@npm:3.33.3"
   checksum: 97cf39cc013f6a4f77700762de36b495228b3c087fc04b61e86bfbfb475595529966cabbcf37e738e3a468c486e815c85118d120cc6fc4960da08a14caf69826
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3":
+  version: 3.34.0
+  resolution: "core-js@npm:3.34.0"
+  checksum: 408a77898abe03bf3e5dec2a451c36f4745081cca9022f8bdf9b817d57bb6d3a534d555f47a4b95e1daa5e21dbc79122eac2402e25720d425f5925127e55dcd8
   languageName: node
   linkType: hard
 
@@ -12265,6 +12272,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"i18next-fs-backend@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "i18next-fs-backend@npm:2.3.1"
+  checksum: 6a4a6318ee13851436e17232afc6833d4e5c937a0fe15cf9454b4b7dd605154580a990716008ee734d582e8db7dd6a39389eb64474d42950093c938e50a80df9
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -14548,6 +14562,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-i18next@npm:^15.0.0":
+  version: 15.1.1
+  resolution: "next-i18next@npm:15.1.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.2"
+    "@types/hoist-non-react-statics": "npm:^3.3.4"
+    core-js: "npm:^3"
+    hoist-non-react-statics: "npm:^3.3.2"
+    i18next-fs-backend: "npm:^2.3.1"
+  peerDependencies:
+    i18next: ^23.7.7
+    next: ">= 12.0.0"
+    react: ">= 17.0.2"
+    react-i18next: ^13.5.0
+  checksum: 094d5c985fb9b06d8865441baddbae225f1c77cc7a21db8d19e71720f8800f5e6ab9f717c6989ab00c761dcb9cd13173aea08e3ffdbe070b8db6f08d1b470f22
+  languageName: node
+  linkType: hard
+
 "next-intl@npm:^3.3.2":
   version: 3.3.2
   resolution: "next-intl@npm:3.3.2"
@@ -16311,7 +16343,9 @@ __metadata:
     framer-motion: "npm:^10.16.14"
     jest: "npm:^29.7.0"
     next: "npm:14.0.3"
+    next-i18next: "npm:^15.0.0"
     next-intl: "npm:^3.3.2"
+    nyc: "npm:^15.1.0"
     postcss: "npm:^8"
     react: "npm:^18"
     react-cookie: "npm:^6.1.1"
