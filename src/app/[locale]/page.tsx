@@ -1,17 +1,16 @@
 import { SampleComponent } from '@/components/SampleComponent';
 import Image from 'next/image'
-import {getTranslations} from 'next-intl/server';
+import { Locales, getTransLocations } from '@/i18n';
 import { Button } from '@nextui-org/react';
 
 export type HomeProps = {
   params: {
-    // lng: Languages
-    lang: any
+    lang: Locales
   }
 }
 
 export default async function Home({ params: { lang } }: HomeProps) {
-  const t = await getTranslations({lang, namespace: 'translation'});
+  const t = await getTransLocations(lang);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
