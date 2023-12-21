@@ -1,6 +1,8 @@
 {
   "recommendations": [
     "bradlc.vscode-tailwindcss",
-    "lokalise.i18n-ally"
+    "lokalise.i18n-ally",
+    "mike-co.import-sorter",
+    "yoavbls.pretty-ts-errors"
   ]
 }

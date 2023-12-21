@@ -1,6 +1,7 @@
+import Image from 'next/image';
+
 import { SampleComponent } from '@/components/SampleComponent';
-import Image from 'next/image'
-import { Locales, getTransLocations } from '@/i18n';
+import { getTransLocations, Locales } from '@/i18n';
 import { Button } from '@nextui-org/react';
 
 export type HomeProps = {

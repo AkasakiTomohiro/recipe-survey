@@ -1,8 +1,9 @@
-import {getRequestConfig} from 'next-intl/server';
+import { getRequestConfig } from 'next-intl/server';
+
+import { AttributeList } from '@/types';
 
 import enJson from './locales/en.json';
 import jaJson from './locales/ja.json';
-import { AttributeList } from '@/types';
 
 export const defaultLocale = 'en';
 export const locales = [defaultLocale, 'ja'] as const;

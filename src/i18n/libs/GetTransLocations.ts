@@ -1,4 +1,5 @@
-import {getTranslations} from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
+
 import { InternationalizationKey, Locales } from '../i18n';
 
 export type GetTransLocationsResult = (key: InternationalizationKey) => string;

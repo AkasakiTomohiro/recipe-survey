@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import {redirect} from 'next/navigation';
-import { Inter } from 'next/font/google'
-import './globals.css'
-import { Locales, defaultLocale, locales } from '@/i18n/i18n';
+import './globals.css';
+
+import { Inter } from 'next/font/google';
+import { redirect } from 'next/navigation';
+
+import { defaultLocale, Locales, locales } from '@/i18n/i18n';
 
 const inter = Inter({ subsets: ['latin'] })
 
