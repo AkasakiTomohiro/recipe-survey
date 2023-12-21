@@ -1,9 +1,21 @@
 import type { Preview } from "@storybook/react";
 import { NextIntlClientProvider } from "next-intl";
 import React from "react";
-import messages from "../src/i18n/locales/en.json"
+import i18n from 'storybook-i18n/preview';
+import enJson from "../src/i18n/locales/en.json"
+import jpJson from "../src/i18n/locales/ja.json"
+
+// @ts-ignore
+const i18nDecorators = i18n?.decorators || [];
+
+// 翻訳マップ
+const messages = {
+  en: enJson,
+  ja: jpJson
+};
 
 const preview: Preview = {
+  ...i18n,
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -14,12 +26,22 @@ const preview: Preview = {
     },
   },
   decorators: [
-    (Story) => (
-      <NextIntlClientProvider locale="en" messages={messages}>
-        <Story />
-      </NextIntlClientProvider>
-    )
-  ]
+    ...i18nDecorators,
+    (Story, { globals }) => {
+      return (
+        <NextIntlClientProvider locale={globals.locale} messages={messages[globals.locale]}>
+          <Story />
+        </NextIntlClientProvider>
+      );
+    }
+  ],
+  globals: {
+    locale: "ja",
+    locales: {
+        en: "English",
+        ja: "日本語"
+    }
+  }
 };
 
 export default preview;

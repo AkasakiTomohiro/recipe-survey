@@ -16351,6 +16351,7 @@ __metadata:
     react-cookie: "npm:^6.1.1"
     react-dom: "npm:^18"
     storybook: "npm:7.6.1"
+    storybook-i18n: "npm:^2.0.13"
     tailwindcss: "npm:^3.3.0"
     typescript: "npm:^5"
   languageName: unknown
@@ -17300,6 +17301,25 @@ __metadata:
   version: 2.14.2
   resolution: "store2@npm:2.14.2"
   checksum: 2f27c3eaa7207b81410e170e7c41379816d22c1566308a9d97fbf853c4facff531fcb2a85f085c7503c578736570972f747c26018ebeaba7d1341fb82a7b6d52
+  languageName: node
+  linkType: hard
+
+"storybook-i18n@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "storybook-i18n@npm:2.0.13"
+  peerDependencies:
+    "@storybook/components": ^7.0.0
+    "@storybook/manager-api": ^7.0.0
+    "@storybook/preview-api": ^7.0.0
+    "@storybook/types": ^7.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 1b8eee3e4130467218410dca39542d081f02ae0c67cdb4ee9fefcb098c5d79bcc686f7242b0c2f2709c1ea7c82a49ef4c65f80b6172768e4a8fcedb079ac4007
   languageName: node
   linkType: hard
 
