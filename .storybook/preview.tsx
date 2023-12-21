@@ -1,9 +1,11 @@
 import type { Preview } from "@storybook/react";
 import { NextIntlClientProvider } from "next-intl";
+import { NextUIProvider } from "@nextui-org/react";
 import React from "react";
 import i18n from 'storybook-i18n/preview';
 import enJson from "../src/i18n/locales/en.json"
 import jpJson from "../src/i18n/locales/ja.json"
+import '../src/app/[locale]/globals.css';
 
 // @ts-ignore
 const i18nDecorators = i18n?.decorators || [];
@@ -30,7 +32,9 @@ const preview: Preview = {
     (Story, { globals }) => {
       return (
         <NextIntlClientProvider locale={globals.locale} messages={messages[globals.locale]}>
-          <Story />
+          <NextUIProvider>
+            <Story />
+          </NextUIProvider>
         </NextIntlClientProvider>
       );
     }
