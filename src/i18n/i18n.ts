@@ -20,9 +20,7 @@ type Resources = {
   ja: JaLocale
 }
 
-export type Namespaces = keyof EnLocale & keyof JaLocale;
-
 /**
  * 検索キーリスト
  */
-export type InternationalizationKey<T extends Namespaces> = AttributeList<Resources[Locales][T], 5>;
+export type InternationalizationKey = AttributeList<Resources[Locales], 10>;
