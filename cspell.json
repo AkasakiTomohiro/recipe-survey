@@ -4,8 +4,16 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "iconify",
+        "iife",
         "languagedetector",
+        "lcov",
+        "linebreak",
+        "markuplint",
+        "nextjs",
         "nextui",
+        "nonblock",
+        "nonwords",
         "tailwindcss"
     ],
     "ignoreWords": [],

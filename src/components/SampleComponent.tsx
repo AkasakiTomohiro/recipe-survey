@@ -1,6 +1,11 @@
-import { useTransLocations } from "@/i18n";
+import { useTransLocations } from '@/i18n';
 
 export const SampleComponent = (): JSX.Element => {
-  const t = useTransLocations('translation');
-  return (<>{t("docs")}{' '}</>)
-}
+  const t = useTransLocations();
+  return (
+    <>
+      {t('docs')}
+      {' '}
+    </>
+  );
+};

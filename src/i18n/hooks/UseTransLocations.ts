@@ -1,9 +1,10 @@
-import { useTranslations } from "next-intl";
-import { InternationalizationKey, Namespaces } from "../i18n";
+import { useTranslations } from 'next-intl';
 
-export type UseTransLocationsResult<TNamespaces extends Namespaces> = (key: InternationalizationKey<TNamespaces>) => string;
+import { InternationalizationKey } from '../i18n';
 
-export function useTransLocations<TNamespaces extends Namespaces = "translation">(namespace?: TNamespaces): UseTransLocationsResult<TNamespaces> {
-  const t = useTranslations(namespace ?? 'translation');
+export type UseTransLocationsResult = (key: InternationalizationKey) => string;
+
+export function useTransLocations(): UseTransLocationsResult {
+  const t = useTranslations();
   return t;
 }
