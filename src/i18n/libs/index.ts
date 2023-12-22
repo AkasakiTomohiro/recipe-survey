@@ -1,1 +1,1 @@
-export * from "./GetTransLocations";
+export * from './GetTransLocations';

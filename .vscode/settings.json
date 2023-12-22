@@ -6,5 +6,9 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sourceLanguage": "ja",
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 140
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 140,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
 }

@@ -8,8 +8,8 @@ import jaJson from './locales/ja.json';
 export const defaultLocale = 'en';
 export const locales = [defaultLocale, 'ja'] as const;
 export type Locales = typeof locales[number];
- 
-export default getRequestConfig(async ({locale}) => ({
+
+export default getRequestConfig(async ({ locale }) => ({
   messages: (await import(`./locales/${locale}.json`)).default
 }));
 
@@ -17,9 +17,9 @@ type EnLocale = typeof enJson;
 type JaLocale = typeof jaJson;
 
 type Resources = {
-  en: EnLocale,
+  en: EnLocale
   ja: JaLocale
-}
+};
 
 /**
  * 検索キーリスト
