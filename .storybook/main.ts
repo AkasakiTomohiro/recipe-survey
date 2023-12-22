@@ -10,6 +10,14 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-coverage",
     '@storybook/addon-a11y',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    }
   ],
   framework: {
     name: "@storybook/nextjs",
