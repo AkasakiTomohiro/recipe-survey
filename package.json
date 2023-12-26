@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
+    "storybook-gen": "scaffdog generate --project ./.scaffdog",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "test-storybook:update": "test-storybook --updateSnapshot",
@@ -57,6 +58,7 @@
     "framer-motion": "^10.16.14",
     "jest": "^29.7.0",
     "postcss": "^8",
+    "scaffdog": "^3.0.0",
     "storybook": "7.6.1",
     "storybook-i18n": "^2.0.13",
     "tailwindcss": "^3.3.0",
@@ -66,7 +68,5 @@
     "node": "20.10.0",
     "npm": "10.2.3",
     "yarn": "4.0.0"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "recipe-survey@0.1.0"
+  }
 }
