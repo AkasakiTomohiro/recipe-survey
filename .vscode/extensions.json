@@ -2,6 +2,9 @@
   "recommendations": [
     "bradlc.vscode-tailwindcss",
     "lokalise.i18n-ally",
-    "naumovs.color-highlight"
+    "mike-co.import-sorter",
+    "yoavbls.pretty-ts-errors",
+    "yusukehirao.vscode-markuplint",
+    "dbaeumer.vscode-eslint"
   ]
 }

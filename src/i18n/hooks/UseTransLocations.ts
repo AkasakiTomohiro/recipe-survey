@@ -1,5 +1,6 @@
-import { useTranslations } from "next-intl";
-import { InternationalizationKey } from "../i18n";
+import { useTranslations } from 'next-intl';
+
+import { InternationalizationKey } from '../i18n';
 
 export type UseTransLocationsResult = (key: InternationalizationKey) => string;
 

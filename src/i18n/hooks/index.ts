@@ -1,1 +1,1 @@
-export * from "./UseTransLocations";
+export * from './UseTransLocations';
