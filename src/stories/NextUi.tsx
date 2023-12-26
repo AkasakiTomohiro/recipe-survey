@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Button } from '@nextui-org/react';
 
 interface NextUiProps {
@@ -16,7 +17,7 @@ interface NextUiProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large'
+  size?: 'sm' | 'md' | 'lg'
 
   /**
    * Button contents
@@ -37,7 +38,11 @@ export const NextUi = ({
   ...props
 }: NextUiProps) => {
   return (
-    <Button color={props.primary ? 'primary' : 'secondary'} isLoading={props.isLoading ? props.isLoading : false}>
+    <Button 
+      color={props.primary ? 'primary' : 'secondary'} 
+      isLoading={props.isLoading ? props.isLoading : false} 
+      size={props.size ? props.size : "lg"}
+    >
       {props.label}
     </Button>
   );
