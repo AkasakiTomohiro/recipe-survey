@@ -54,6 +54,8 @@
     "@storybook/react": "^8.0.0-alpha.0",
     "@storybook/test": "7.6.1",
     "@storybook/test-runner": "^0.16.0",
+    "@stylistic/eslint-plugin": "^1.5.1",
+    "@stylistic/eslint-plugin-plus": "^1.5.1",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
