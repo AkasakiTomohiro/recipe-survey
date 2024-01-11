@@ -14,7 +14,7 @@
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "test-storybook:update": "test-storybook --updateSnapshot",
-    "test-storybook:coverage": "test-storybook --coverage && nyc report --reporter=text --reporter=lcov -t coverage/storybook",
+    "test-storybook:coverage": "test-storybook --coverage && nyc report --reporter=text --reporter=lcov -t coverage/storybook --report-dir coverage/storybook",
     "install-playwright": "yarn create playwright",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
