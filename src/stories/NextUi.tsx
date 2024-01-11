@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from '@nextui-org/react';
+
+import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from '@nextui-org/react';
 
 interface NextUiProps {
 
@@ -16,7 +17,7 @@ interface NextUiProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large'
+  size?: 'sm' | 'md' | 'lg'
 
   /**
    * Button contents
@@ -36,9 +37,40 @@ interface NextUiProps {
 export const NextUi = ({
   ...props
 }: NextUiProps) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
-    <Button color={props.primary ? 'primary' : 'secondary'} isLoading={props.isLoading ? props.isLoading : false}>
-      {props.label}
-    </Button>
+    <>
+      <Button
+        onPress={onOpen}
+        color={props.primary ? 'primary' : 'secondary'}
+        isLoading={props.isLoading ? props.isLoading : false}
+        size={props.size ? props.size : 'lg'}
+      >
+        {props.label}
+      </Button>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {onClose => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalBody>
+                <p>
+                  Test Modal
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Action
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </>
   );
 };

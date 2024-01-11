@@ -1,0 +1,37 @@
+name: "UI Tests"
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  # Run interaction and accessibility tests
+  interaction-and-accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: volta-cli/action@v4
+      - name: Install dependencies
+        run: yarn
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+      - name: Unit Test
+        run: yarn test:coverage
+      - name: Build Storybook
+        run: yarn build-storybook --quiet
+      - name: Serve Storybook and run tests
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server storybook-static --port 6006 --silent" \
+            "npx wait-on tcp:6006 && yarn test-storybook:coverage"
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          files: coverage/ut/lcov.info,coverage/storybook/lcov.info
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          # Grab this from the Chromatic manage page
+          projectToken: ${{ secrets.CHROMATIC_TOKEN }}

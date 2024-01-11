@@ -4,6 +4,8 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "chromaui",
+        "Codecov",
         "iconify",
         "iife",
         "languagedetector",
@@ -12,9 +14,9 @@
         "markuplint",
         "nextjs",
         "nextui",
-        "scaffdog",
         "nonblock",
         "nonwords",
+        "scaffdog",
         "tailwindcss"
     ],
     "ignoreWords": [],
