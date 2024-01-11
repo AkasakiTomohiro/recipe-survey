@@ -1,9 +1,7 @@
 name: "UI Tests"
 
 on:
-  push:
-    branches:
-      - develop
+  pull_request:
   workflow_dispatch:
 jobs:
   # Run interaction and accessibility tests
