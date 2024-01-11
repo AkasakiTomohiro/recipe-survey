@@ -28,6 +28,6 @@ export const Secondary: Story = {
   args: {
     label    : 'Loading',
     isLoading: true,
-    size: 'md'
+    size     : 'md'
   }
 };
