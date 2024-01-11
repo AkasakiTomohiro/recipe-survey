@@ -12,6 +12,7 @@
         "markuplint",
         "nextjs",
         "nextui",
+        "scaffdog",
         "nonblock",
         "nonwords",
         "tailwindcss"
