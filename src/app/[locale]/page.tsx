@@ -1,10 +1,19 @@
 import Image from 'next/image';
 
+import { SampleComponent } from '@/components/SampleComponent';
+import { getTransLocations, Locales } from '@/i18n';
 import { Button } from '@mui/material';
 
 import styles from './page.module.css';
 
-export default function Home() {
+export type HomeProps = {
+  params: {
+    lang: Locales
+  }
+};
+
+export default async function Home({ params: { lang }}: HomeProps) {
+  const t = await getTransLocations(lang);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -52,7 +61,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            <SampleComponent />
+            {' '}
+            <span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
@@ -64,7 +75,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            {t('learn')}
+            {' '}
+            <span>-&gt;</span>
           </h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
