@@ -30,7 +30,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   if(!locales.includes(params.locale as any)) redirect(`/${defaultLocale}`);
  return (
-    <html lang="en">
+    <html lang={params.locale}>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{}}>
           <ThemeProvider theme={lightTheme}>  
