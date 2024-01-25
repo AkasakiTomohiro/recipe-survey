@@ -6860,6 +6860,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chromatic@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "chromatic@npm:10.5.0"
+  peerDependencies:
+    chromatic-cypress: ^0.4.0 || ^1.0.0
+    chromatic-playwright: ^0.4.0 || ^1.0.0
+  peerDependenciesMeta:
+    chromatic-cypress:
+      optional: true
+    chromatic-playwright:
+      optional: true
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 8ccaafb5e976af01cf55bc66649ba5d7be42bc2ae257a8840722c48a637596d0b835af091c72597eac5d9be234aacfbb535388899ffebf8a66a94913df73372e
+  languageName: node
+  linkType: hard
+
 "chrome-trace-event@npm:^1.0.2":
   version: 1.0.3
   resolution: "chrome-trace-event@npm:1.0.3"
@@ -14184,6 +14203,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    chromatic: "npm:^10.5.0"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
     eslint-plugin-storybook: "npm:^0.6.15"
