@@ -1,0 +1,15 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "fontsource",
+        "markuplint",
+        "nextjs",
+        "roboto",
+        "scaffdog"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

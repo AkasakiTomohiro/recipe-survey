@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "lokalise.i18n-ally",
+    "mike-co.import-sorter",
+    "yoavbls.pretty-ts-errors",
+    "yusukehirao.vscode-markuplint",
+    "dbaeumer.vscode-eslint"
+  ]
+}
