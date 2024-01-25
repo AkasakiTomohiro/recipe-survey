@@ -6,6 +6,9 @@ import { redirect } from 'next/navigation';
 
 import { defaultLocale, Locales, locales } from '@/i18n/i18n';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
+
+import { lightTheme } from '../../theme/LightTheme';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +33,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AppRouterCacheProvider options={{}}>
-          {children}
+          <ThemeProvider theme={lightTheme}>  
+            {children}
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
