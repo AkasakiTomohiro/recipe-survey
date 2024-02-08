@@ -7,7 +7,6 @@
 	// Placeholders with the same ids are connected.
 	// Example:
 	"fileHeader": {
-		"scope": "javascript,typescript",
 		"prefix": "fileHeader",
 		"body": [
 			"/**",
