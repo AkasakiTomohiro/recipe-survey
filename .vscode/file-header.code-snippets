@@ -13,7 +13,7 @@
 			"/**",
 			" * @file $TM_FILENAME",
 			" * @author Artan's Projects",
-			" * @copyright © 2023 Artan's Projects. All rights reserved.",
+			" * @copyright © $CURRENT_YEAR Artan's Projects. All rights reserved.",
 			" */"
 		],
 		"description": "File Header"
