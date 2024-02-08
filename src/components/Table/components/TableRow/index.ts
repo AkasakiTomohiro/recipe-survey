@@ -4,6 +4,4 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-export * from "./TableHeader";
-export * from "./TableRow";
-export * from "./TableCollapseRow";
+export * from "./types";
