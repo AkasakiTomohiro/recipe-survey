@@ -1,3 +1,9 @@
+/**
+ * @file GetTransLocations.ts
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import { getTranslations } from 'next-intl/server';
 
 import { InternationalizationKey, Locales } from '../i18n';

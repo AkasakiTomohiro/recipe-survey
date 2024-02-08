@@ -1,3 +1,9 @@
+/**
+ * @file TableHeader.stories.tsx
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Paper from '@mui/material/Paper';

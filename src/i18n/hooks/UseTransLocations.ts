@@ -1,3 +1,9 @@
+/**
+ * @file UseTransLocations.ts
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import { useTranslations } from 'next-intl';
 
 import { InternationalizationKey } from '../i18n';

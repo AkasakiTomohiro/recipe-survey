@@ -1,3 +1,9 @@
+/**
+ * @file TableHeader.tsx
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';

@@ -1,3 +1,9 @@
+/**
+ * @file middleware.ts
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import createMiddleware from 'next-intl/middleware';
 
 import { locales } from './i18n';
