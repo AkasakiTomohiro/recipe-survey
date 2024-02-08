@@ -15,7 +15,7 @@ import { TableHeader } from '../TableHeader/TableHeader';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title     : 'components/TableHeader',
+  title     : 'components/Table/TableHeader',
   component : TableHeader,
   parameters: {
 
