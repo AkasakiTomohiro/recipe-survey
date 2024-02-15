@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Table/TableCollapseRow CollapseOpen play-test 1`] = `
+<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-xpjyhy-MuiPaper-root-MuiTableContainer-root">
+  <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root"
+        style="border-bottom: unset;"
+    >
+      <button class="MuiButtonBase-root Mui-focusVisible MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+              tabindex="0"
+              type="button"
+              aria-label="expand row"
+      >
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+             focusable="false"
+             aria-hidden="true"
+             viewbox="0 0 24 24"
+             data-testid="KeyboardArrowUpIcon"
+        >
+          <path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z">
+          </path>
+        </svg>
+        <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+          <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate"
+                style="width: 35px; height: 35px; top: -0.5px; left: -0.5px;"
+          >
+            <span class="MuiTouchRipple-child MuiTouchRipple-childPulsate">
+            </span>
+          </span>
+          <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible"
+                style="width: 35px; height: 35px; top: -0.5px; left: -0.5px;"
+          >
+            <span class="MuiTouchRipple-child MuiTouchRipple-childLeaving">
+            </span>
+          </span>
+        </span>
+      </button>
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value1
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value2
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value3
+    </td>
+  </tr>
+  <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root"
+        colspan="4"
+        style="padding-bottom: 0px; padding-top: 0px;"
+    >
+      <div class="MuiCollapse-root MuiCollapse-vertical css-1fkrdiv-MuiCollapse-root"
+           style="min-height: 0px; height: 20px; transition-duration: 171ms;"
+      >
+        <div class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper">
+          <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner">
+            0
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`components/Table/TableCollapseRow Primary smoke-test 1`] = `
+<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-xpjyhy-MuiPaper-root-MuiTableContainer-root">
+  <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root"
+        style="border-bottom: unset;"
+    >
+      <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+              tabindex="0"
+              type="button"
+              aria-label="expand row"
+      >
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+             focusable="false"
+             aria-hidden="true"
+             viewbox="0 0 24 24"
+             data-testid="KeyboardArrowDownIcon"
+        >
+          <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+          </path>
+        </svg>
+        <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+        </span>
+      </button>
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value1
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value2
+    </td>
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root">
+      Value3
+    </td>
+  </tr>
+  <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+    <td class="MuiTableCell-root MuiTableCell-sizeMedium css-bsph2u-MuiTableCell-root"
+        colspan="4"
+        style="padding-bottom: 0px; padding-top: 0px;"
+    >
+    </td>
+  </tr>
+</div>
+`;
