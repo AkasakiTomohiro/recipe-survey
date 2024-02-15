@@ -8,6 +8,15 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
+    "@storybook/addon-a11y", 
+    {
+      name: "@storybook/addon-coverage",
+      options: {
+        istanbul: {
+          exclude: ["**/**/*.ts", "**/.storybook/**"], // coverageから除外する
+        },
+      },
+    },
   ],
   framework: {
     name: "@storybook/nextjs",
