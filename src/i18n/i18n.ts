@@ -1,3 +1,9 @@
+/**
+ * @file i18n.ts
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
+
 import { getRequestConfig } from 'next-intl/server';
 
 import { AttributeList } from '@/types';

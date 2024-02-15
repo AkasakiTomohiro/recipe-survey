@@ -4,4 +4,4 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-export * from './GetTransLocations';
+export * from "./types";
