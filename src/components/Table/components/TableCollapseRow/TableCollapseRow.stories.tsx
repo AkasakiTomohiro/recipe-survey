@@ -5,9 +5,9 @@
  */
 
 import type { Meta, StoryObj } from '@storybook/react';
-
 import Paper from '@mui/material/Paper';
 import TableContainer from '@mui/material/TableContainer';
+import { userEvent, within } from '@storybook/testing-library';
 
 import { TableCollapseRow } from './TableCollapseRow';
 
@@ -51,5 +51,11 @@ export const CollapseOpen: Story = {
     row: ['Value1', 'Value2', 'Value3'],
     Collapse: (props) => (<>{props.index}</>)
   },
-  decorators: decorators
+  decorators: decorators,
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const collapseButton = canvas.getByRole('button', {});
+    console.log(collapseButton)
+    await userEvent.click(collapseButton);
+  }
 };
