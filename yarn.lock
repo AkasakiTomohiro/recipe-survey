@@ -3922,6 +3922,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:^7.6.15":
+  version: 7.6.15
+  resolution: "@storybook/addon-a11y@npm:7.6.15"
+  dependencies:
+    "@storybook/addon-highlight": "npm:7.6.15"
+    axe-core: "npm:^4.2.0"
+  checksum: 767b5712ece24a32313189e761f423ec96dd61145def50fb35c92d2b26e860044c27bc290d54b0a532f682032f25ec245e893382fbbea02ba2b84664003ceaeb
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:7.6.10":
   version: 7.6.10
   resolution: "@storybook/addon-actions@npm:7.6.10"
@@ -4036,6 +4046,15 @@ __metadata:
   dependencies:
     "@storybook/global": "npm:^5.0.0"
   checksum: 879fa4723150fa1c0d7eb975144d0194571f1343c10c3b105032ecf1f678da8d1b65fa895b1e74b68f0770596fc90ca43c734b81b88b79722b63f726a66827fc
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.15":
+  version: 7.6.15
+  resolution: "@storybook/addon-highlight@npm:7.6.15"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 8949b427c97268235bc9358940c430b6a6099843582a7f5dae196d400e85d5d63d834c56782587dd179ea8725d557275e7a0e15fce5ede66b12d59b894832f70
   languageName: node
   linkType: hard
 
@@ -7048,6 +7067,13 @@ __metadata:
   version: 4.7.0
   resolution: "axe-core@npm:4.7.0"
   checksum: 89ac5712b5932ac7d23398b4cb5ba081c394a086e343acc68ba49c83472706e18e0799804e8388c779dcdacc465377deb29f2714241d3fbb389cf3a6b275c9ba
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.8.4
+  resolution: "axe-core@npm:4.8.4"
+  checksum: 1100ac42c4b8cde1fb7c428d2b76e5a14e20d9d41fe635c55048e4ba27f1eded729b838379a036b5ef9cf25ba7f7bedeef01ebd3b4accd2afee397b10b0265c4
   languageName: node
   linkType: hard
 
@@ -16516,6 +16542,7 @@ __metadata:
     "@mui/material": "npm:^5.15.5"
     "@mui/material-nextjs": "npm:^5.15.5"
     "@playwright/test": "npm:^1.41.2"
+    "@storybook/addon-a11y": "npm:^7.6.15"
     "@storybook/addon-coverage": "npm:^1.0.0"
     "@storybook/addon-essentials": "npm:^7.6.10"
     "@storybook/addon-interactions": "npm:^7.6.10"
