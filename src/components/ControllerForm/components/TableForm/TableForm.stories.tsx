@@ -16,7 +16,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 type CustomProfile = MaterialTypes & Units
 
 const meta: Meta<typeof ListForm> = {
-  title : 'RecipeSurvey/components/ControllerForm/ListForm',
+  title : 'RecipeSurvey/components/ControllerForm/TableForm',
   render: (args) => {
     const methods = useForm<CustomProfile>({
       mode         : 'onChange',
