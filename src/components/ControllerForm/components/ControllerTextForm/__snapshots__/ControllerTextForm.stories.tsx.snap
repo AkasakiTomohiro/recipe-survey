@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary smoke-test 1`] = `
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+  <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+    <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard css-11mm5xv-MuiFormLabel-root-MuiInputLabel-root"
+             data-shrink="false"
+             for=":r0:"
+             id=":r0:-label"
+      >
+        テキスト
+      </label>
+      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+        <input aria-invalid="false"
+               id=":r0:"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               type="text"
+               name="name"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ReadOnly smoke-test 1`] = `
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+  <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+    <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard css-11mm5xv-MuiFormLabel-root-MuiInputLabel-root"
+             data-shrink="false"
+             for=":r1:"
+             id=":r1:-label"
+      >
+        テキスト
+      </label>
+      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+        <input aria-invalid="false"
+               id=":r1:"
+               readonly
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               type="text"
+               name="name"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+`;

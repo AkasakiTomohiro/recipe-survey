@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeSurvey/components/ControllerForm/ControllerCheckboxForm Primary smoke-test 1`] = `
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+  <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+    <label class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-j204z7-MuiFormControlLabel-root">
+      <span class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-10aivp9-MuiButtonBase-root-MuiCheckbox-root">
+        <input class="PrivateSwitchBase-input css-1m9pwf3"
+               data-indeterminate="false"
+               type="checkbox"
+               value="true"
+               checked
+               name="name"
+        >
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+             focusable="false"
+             aria-hidden="true"
+             viewbox="0 0 24 24"
+             data-testid="CheckBoxIcon"
+        >
+          <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+          </path>
+        </svg>
+        <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+        </span>
+      </span>
+      <span class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root">
+        チェックボックス
+      </span>
+    </label>
+  </div>
+</div>
+`;
