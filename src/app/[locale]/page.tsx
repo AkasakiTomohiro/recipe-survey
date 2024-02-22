@@ -2,9 +2,11 @@ import Image from 'next/image';
 
 import { SampleComponent } from '@/components/SampleComponent';
 import { getTransLocations, Locales } from '@/i18n';
+import { useProfile } from '@/providers';
 import { Button } from '@mui/material';
 
 import styles from './page.module.css';
+import { TestComponent } from './TestComponent';
 
 export type HomeProps = {
   params: {
@@ -14,6 +16,7 @@ export type HomeProps = {
 
 export default async function Home({ params: { lang }}: HomeProps) {
   const t = await getTransLocations(lang);
+  
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -108,6 +111,7 @@ export default async function Home({ params: { lang }}: HomeProps) {
           </p>
         </a>
       </div>
+      <TestComponent />
     </main>
   );
 }

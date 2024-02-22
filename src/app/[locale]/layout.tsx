@@ -5,10 +5,10 @@ import { Inter } from 'next/font/google';
 import { redirect } from 'next/navigation';
 
 import { defaultLocale, Locales, locales } from '@/i18n/i18n';
+import { ProfileProvider } from '@/providers';
+import { lightTheme } from '@/theme/LightTheme';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-
-import { lightTheme } from '../../theme/LightTheme';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +33,10 @@ export default function RootLayout({
     <html lang={params.locale}>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{}}>
-          <ThemeProvider theme={lightTheme}>  
-            {children}
+          <ThemeProvider theme={lightTheme}>
+            <ProfileProvider>
+              {children}
+            </ProfileProvider>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
