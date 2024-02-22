@@ -4,5 +4,4 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-export * from "./components";
-export * from "./hooks";
+export * from "./UseTable";
