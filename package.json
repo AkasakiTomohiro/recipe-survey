@@ -60,6 +60,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "markuplint": "^3.15.0",
     "nyc": "^15.1.0",
+    "react-hook-form": "^7.50.1",
     "scaffdog": "^3.0.0",
     "storybook": "^7.6.10",
     "storybook-i18n": "^2.0.13",

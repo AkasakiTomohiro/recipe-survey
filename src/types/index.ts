@@ -16,3 +16,8 @@ export type Join<K, P> =
 
 export type AttributeList<T, U extends number = 3> = [U] extends [never] ? never : T extends object ?
   { [K in keyof T]-?: Join<K, T[K] extends (infer R)[] ? (R extends object ? AttributeList<R[], Prev[U]> : AttributeList<T[K], Prev[U]>) : AttributeList<T[K], Prev[U]>> }[keyof T] : '';
+
+export type RequiredFilterType<T extends Record<string, any>, U> = {
+  [K in keyof T]: T[K] extends object ? RequiredFilterType<T[K], U>: T[K] extends U ? T[K] : never;
+}
+  
