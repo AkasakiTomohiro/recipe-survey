@@ -6,26 +6,27 @@
 
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
+import { LocalStorageEventName, setLocalStorage } from './utils';
+
 /**
- * ローカルストレージの変更イベント名
- * @see https://developer.mozilla.org/ja/docs/Web/API/Window/storage_event
+ * ローカルストレージを使用するカスタムフックの戻り値
  */
-const LocalStorageEventName = 'storage';
+export type UseLocalStorageResult<T extends Record<string, any>> = [T, Dispatch<SetStateAction<T>>];
 
 /**
  * ローカルストレージを使用するカスタムフック
  */
-export function useLocalStorage<T extends Record<string, any>>(
+export function useLocalStorage<T extends Record<string, any> | any[]>(
   key: string,
   initialValue: T
-): [T, Dispatch<SetStateAction<T>>] {
+): UseLocalStorageResult<T> {
 
   // ローカルストレージの値を取得しuseStateの初期値を設定
   const [state, setState] = useState<T>(() => getLocalStorage(key, initialValue));
 
   // stateが変更されたらローカルストレージに保存
   useEffect(() => {
-    setLocalStorage(key, state);
+    setLocalStorage(key, JSON.stringify(state));
   }, [key, state]);
 
   // マウント時にローカルストレージの値を監視するイベントリスナーを設定
@@ -57,19 +58,12 @@ function getLocalStorage<T extends Record<string, any>>(key: string, initialValu
     }
     
     // ローカルストレージに値が存在しない場合は初期値を設定
-    return setLocalStorage(key, initialValue);
+    setLocalStorage(key, JSON.stringify(initialValue));
+    return initialValue;
   } catch {
 
     // ローカルストレージの値が不正な場合は初期値を設定
-    return setLocalStorage(key, initialValue);
+    setLocalStorage(key, JSON.stringify(initialValue));
+    return initialValue;
   }
-}
-
-/**
- * ローカルストレージに値を保存し、保存イベントを発火
- */
-function setLocalStorage<T extends Record<string, any>>(key: string, value: T): T {
-  localStorage.setItem(key, JSON.stringify(value));
-  window.dispatchEvent(new Event(LocalStorageEventName));
-  return value;
 }
