@@ -6,4 +6,4 @@
 
 export * from "./utils";
 export * from "./UseLocalStorage";
-
+export * from "./UseLocalStorageStr";
