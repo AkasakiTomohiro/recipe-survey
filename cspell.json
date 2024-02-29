@@ -8,7 +8,8 @@
         "markuplint",
         "nextjs",
         "roboto",
-        "scaffdog"
+        "scaffdog",
+        "lsse"
     ],
     "ignoreWords": [],
     "import": []
