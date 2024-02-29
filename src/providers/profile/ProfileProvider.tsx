@@ -8,9 +8,13 @@
 
 import { createContext, useCallback, useContext } from 'react';
 
-import { ProfileContextType, ProfileProviderProps, Recipe } from './types';
+import { useSelectedProfileId } from './hooks/UseProfile/UseProfile';
+import { ProfileContextType, ProfileProviderProps } from './types';
 
 const ProfileContext = createContext<ProfileContextType>({
+  getSelectedProfileId: () => {
+    throw new Error('ProfileContext is not implemented');
+  },
   getRecipes: () => {
     throw new Error('ProfileContext is not implemented');
   }
@@ -24,9 +28,11 @@ export function useProfile(): ProfileContextType {
 }
 
 export const ProfileProvider = ({ children }: ProfileProviderProps): JSX.Element => {
+  const [selectedProfileId, setSelectedProfileId] = useSelectedProfileId();
   const getRecipes = useCallback(() => [], []);
   return (
-    <ProfileContext.Provider value={{ 
+    <ProfileContext.Provider value={{
+      getSelectedProfileId: () => selectedProfileId,
       getRecipes: getRecipes
     }}>
       {children}

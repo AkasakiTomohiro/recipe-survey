@@ -17,7 +17,12 @@ export type ProfileProviderProps = {
 export type ProfileContextType = {
 
   /**
-   * レシピ一覧を取得する
+   * 選択しているプロファイルIDを取得
+   */
+  getSelectedProfileId: () => string;
+
+  /**
+   * レシピ一覧を取得
    */
   getRecipes: () => Recipe[];
 }
