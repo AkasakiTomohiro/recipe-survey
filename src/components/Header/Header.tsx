@@ -1,64 +1,108 @@
+/**
+ * @file Header.tsx
+ * @author Artan's Projects
+ * @copyright © 2024 Artan's Projects. All rights reserved.
+ */
 
 import * as React from 'react';
 
-import { HelpCenter, Language } from '@mui/icons-material';
+import { useTransLocations } from '@/i18n';
 import DensityMediumOutlinedIcon from '@mui/icons-material/DensityMediumOutlined';
-import { Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import {
+    AppBar, Box, IconButton, List, ListItemButton, ListItemText, MenuItem, Select, SelectChangeEvent, Toolbar, Typography
+} from '@mui/material';
 
+type Language = 'Jp' | 'En';
+
+// 設定した言語は引数で取得できるように変更する
+// TODO: Drawerをつける
 export const Header = (): JSX.Element => {
+  const t = useTransLocations()
+  return (
+    <Box height={50} sx={{ display: 'flex' }}>
+      <AppBar position='static' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+          <IconButton size='medium' sx={{mx: 2}}>
+            <DensityMediumOutlinedIcon style={{color: 'black'}}/>
+          </IconButton>
+        <Typography component="div" sx={{flexGrow: 1, m: 'auto 0'}}>
+          {t('appTitle')}
+        </Typography>
+        <LanguageSelectBox />
+        {/* 実装後に解禁 */}
+        {/* <GameSelectBox /> */}
+      </AppBar>
+    </Box>
+  );
+};
 
-  const [language, setLanguage] = React.useState<string>('');
-  const [game, setGame] = React.useState<string>('Satisfactory');
+const LanguageSelectBox = (): JSX.Element => {
+
+  const [language, setLanguage] = React.useState<string>('日本語');
 
   const languageChange = (event: SelectChangeEvent) => {
     setLanguage(event.target.value)
   }
+
+  return (
+    <Select
+    labelId='languageSelectLabel'
+    id='languageSelect'
+    value={language}
+    onChange={languageChange}
+    label='Language'
+    >
+      <MenuItem value={0}>
+        English
+      </MenuItem>
+      <MenuItem value={10}>
+        日本語
+      </MenuItem>
+    </Select>
+  )
+}
+
+const GameSelectBox = (): JSX.Element => {
+
+  const [game, setGame] = React.useState<string>('Satisfactory');
+
   const gameChange = (event: SelectChangeEvent) => {
     setGame(event.target.value);
   }
 
   return (
-    <>
-      <div style={{background: "#4CAF50", display: 'flex', alignItems: 'center', padding: '0 4px', width: 'full'}}>
-        <Button variant='outlined'>
-          <DensityMediumOutlinedIcon style={{color: 'black'}}/>
-        </Button>
-        <div className='roboto-bold' style={{paddingLeft: '8px'}}>
-          Recipe Survey
-        </div>
-        <div style={{flexGrow: 1}}></div>
-        <FormControl variant='standard' sx={{minWidth: '220px', m: '0 0px'}}>
-          <InputLabel id='languageSelectLabel'>Language</InputLabel>
-          <Select
-            labelId='languageSelectLabel'
-            id='languageSelect'
-            value={language}
-            onChange={languageChange}
-            label='Language'
-          >
-            <MenuItem value={0}>
-              English
-            </MenuItem>
-            <MenuItem value={10}>
-              Japanese
-            </MenuItem>
-          </Select>
-        </FormControl>
-        <FormControl variant='standard' sx={{minWidth: '220px', m: '0 0px'}}>
-          <InputLabel id='gameSelectLabel'></InputLabel>
-          <Select
-            labelId='gameSelectLabel'
-            id='gameSelect'
-            value={game}
-            onChange={gameChange}
-            label='Satisfactory'
-          >
-            <MenuItem value={0}>
-              Satisfactory
-            </MenuItem>
-          </Select>
-        </FormControl>
-      </div>
-    </>
-  );
-};
+    <Select
+    labelId='gameSelectLabel'
+    id='gameSelect'
+    value={game}
+    onChange={gameChange}
+    label='Satisfactory'
+    >
+      <MenuItem value={0}>
+        Satisfactory
+      </MenuItem>
+    </Select>
+  )
+
+}
+
+const SideBar = (): JSX.Element => {
+
+  const [ displaySideBar, setDisplaySideBar ] = React.useState<boolean>(false);
+
+  const SideBar: JSX.Element = (
+    <Box sx={{width: 150}}>
+      <List>
+        <ListItemButton>
+          <ListItemText>
+            レシピ一覧
+          </ListItemText>
+        </ListItemButton>
+      </List>
+    </Box>
+  )
+
+  return (
+    <></>
+  )
+
+}

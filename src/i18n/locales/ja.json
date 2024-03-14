@@ -1,4 +1,42 @@
 {
   "docs": "ドキュメント",
-  "learn": "学ぶ"
+  "learn": "学ぶ",
+  "appTitle": "Recipe Survey",
+  "common": {
+    "next": "次へ",
+    "back": "戻る",
+    "done": "完了",
+    "add": "追加",
+    "delete": "削除",
+    "register": "登録",
+    "search": "検索",
+    "edit": "編集",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "select": "選択"
+  },
+  "recipes": {
+    "title": "レシピ一覧",
+    "headers": {
+      "product": "生産物",
+      "type": "種別",
+      "byproduct": "副産物",
+      "productionVolume": "生産量（1分間の消費数）",
+      "material": "素材",
+      "materialConsumption": "素材消費量（1分間の消費量）",
+      "recipeName": "レシピ名",
+      "recipeAlternativeName": "代替レシピ名",
+      "machine": "作成機",
+      "progressTime": "所要時間",
+      "energy": "エネルギー",
+      "energyUnit": "エネルギー単位",
+      "deliverables": "成果物"
+    },
+    "registerRecipe": {
+      "title": "レシピ登録",
+      "basicInfo": "基本情報",
+      "materialAndProduct": "素材と成果物",
+      "confirm": "確認"
+    }
+  }
 }

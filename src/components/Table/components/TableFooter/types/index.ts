@@ -14,7 +14,7 @@ export interface ITableFooterProps {
   /**
    * 1ページの行数
    */
-  rowsPerPage: 10 | 25 | 100;
+  rowsPerPage: number;
 
   /**
    * ページ数

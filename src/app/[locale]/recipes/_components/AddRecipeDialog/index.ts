@@ -4,5 +4,5 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-export * from "./types";
-export * from "./TableFooter";
+export * from './types';
+export * from './AddRecipeDialog';

@@ -1,4 +1,40 @@
 {
-  "docs": "Docs",
-  "learn": "Learn"
+  "appTitle": "Recipe Survey",
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "add": "Add",
+    "delete": "Delete",
+    "register": "Register",
+    "search": "Search",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "select": "Select"
+  },
+  "recipes": {
+    "title": "Recipe List",
+    "headers": {
+      "product": "Product",
+      "type": "Type",
+      "byproduct": "Byproduct",
+      "productionVolume": "Production volume (Consumption per minute)",
+      "material": "Material",
+      "materialConsumption": "Material consumption (Consumption per minute)",
+      "recipeName": "Recipe Name",
+      "recipeAlternativeName": "Recipe Alternative Name",
+      "machine": "Machine",
+      "progressTime": "Process Time",
+      "energy": "Energy",
+      "energyUnit": "Energy Unit",
+      "deliverables": "Deliverables" 
+    },
+    "registerRecipe": {
+      "title": "Register Recipe",
+      "basicInfo": "Basic Info",
+      "materialAndProduct": "Material And Product",
+      "confirm": "Confirm"
+    }
+  }
 }
