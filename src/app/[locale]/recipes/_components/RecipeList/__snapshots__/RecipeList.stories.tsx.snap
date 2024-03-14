@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeSurvey/recipes/components/RecipeList Primary smoke-test 1`] = `
+<h5 class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root">
+  レシピ一覧
+</h5>
+<div class="MuiBox-root css-1qm1lh">
+  <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth MuiTextField-root css-17vbkzs-MuiFormControl-root-MuiTextField-root">
+    <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard css-11mm5xv-MuiFormLabel-root-MuiInputLabel-root"
+           data-shrink="false"
+           for=":r0:"
+           id=":r0:-label"
+    >
+      検索
+    </label>
+    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd css-se4mu1-MuiInputBase-root-MuiInput-root">
+      <input aria-invalid="false"
+             id=":r0:"
+             data-testid="search-field"
+             class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd css-1x51dt5-MuiInputBase-input-MuiInput-input"
+             type="text"
+             value
+      >
+      <div class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-standard MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root">
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+             focusable="false"
+             aria-hidden="true"
+             viewbox="0 0 24 24"
+             data-testid="SearchIcon"
+        >
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14">
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-pnzy5l-MuiPaper-root">
+  <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
+    <table class="MuiTable-root css-qzpwgq-MuiTable-root">
+      <thead class="MuiTableHead-root css-15wwp11-MuiTableHead-root">
+        <tr class="MuiTableRow-root MuiTableRow-head css-dvunen-MuiTableRow-root">
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+          </th>
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+            レシピ名
+          </th>
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+            代替レシピ名
+          </th>
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+            作成機
+          </th>
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+            所要時間
+          </th>
+          <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium css-epgjbe-MuiTableCell-root"
+              scope="col"
+          >
+            エネルギー
+          </th>
+        </tr>
+      </thead>
+      <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root">
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            バッテリー
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            混合機
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            10
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            鉄インゴット
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            製錬炉
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            4
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            鉄インゴット
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            製錬炉
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            4
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            鉄インゴット
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            製錬炉
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            4
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                    aria-label="expand row"
+            >
+              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                   focusable="false"
+                   aria-hidden="true"
+                   viewbox="0 0 24 24"
+                   data-testid="KeyboardArrowDownIcon"
+              >
+                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+                </path>
+              </svg>
+              <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+              </span>
+            </button>
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            鉄インゴット
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            製錬炉
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            2
+          </td>
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+            4
+          </td>
+        </tr>
+        <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+          <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+              colspan="6"
+              style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+          >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="MuiTablePagination-root css-uxtgd5-MuiTablePagination-root">
+    <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar">
+      <div class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer">
+      </div>
+      <p class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
+         id=":r2:"
+      >
+        Rows per page:
+      </p>
+      <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-9fvjej-MuiInputBase-root-MuiTablePagination-select">
+        <div tabindex="0"
+             role="combobox"
+             aria-controls=":r3:"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-labelledby=":r2: :r1:"
+             id=":r1:"
+             class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+        >
+          10
+        </div>
+        <input aria-invalid="false"
+               aria-hidden="true"
+               tabindex="-1"
+               class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+               value="10"
+        >
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+             focusable="false"
+             aria-hidden="true"
+             viewbox="0 0 24 24"
+             data-testid="ArrowDropDownIcon"
+        >
+          <path d="M7 10l5 5 5-5z">
+          </path>
+        </svg>
+      </div>
+      <p class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows">
+        1–10 of 12
+      </p>
+      <div class="MuiTablePagination-actions">
+        <button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                tabindex="-1"
+                type="button"
+                disabled
+                aria-label="Go to previous page"
+                title="Go to previous page"
+        >
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+               focusable="false"
+               aria-hidden="true"
+               viewbox="0 0 24 24"
+               data-testid="KeyboardArrowLeftIcon"
+          >
+            <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z">
+            </path>
+          </svg>
+        </button>
+        <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                tabindex="0"
+                type="button"
+                aria-label="Go to next page"
+                title="Go to next page"
+        >
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+               focusable="false"
+               aria-hidden="true"
+               viewbox="0 0 24 24"
+               data-testid="KeyboardArrowRightIcon"
+          >
+            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z">
+            </path>
+          </svg>
+          <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
