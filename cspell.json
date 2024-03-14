@@ -5,11 +5,12 @@
     "dictionaries": [],
     "words": [
         "fontsource",
+        "hookform",
+        "lsse",
         "markuplint",
         "nextjs",
         "roboto",
-        "scaffdog",
-        "lsse"
+        "scaffdog"
     ],
     "ignoreWords": [],
     "import": []
