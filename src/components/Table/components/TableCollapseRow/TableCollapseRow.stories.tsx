@@ -5,7 +5,9 @@
  */
 
 import type { Meta, StoryObj } from '@storybook/react';
+import { TableBody } from '@mui/material';
 import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
 import TableContainer from '@mui/material/TableContainer';
 import { userEvent, within } from '@storybook/testing-library';
 
@@ -30,7 +32,11 @@ type Story = StoryObj<typeof meta>;
 
 const decorators = [(Story: any) => (
   <TableContainer component={Paper}>
-    <Story />
+    <Table>
+      <TableBody>
+        <Story />
+      </TableBody>
+    </Table>
   </TableContainer>
 )];
 

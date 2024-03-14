@@ -13,9 +13,6 @@ const meta = {
   title     : 'RecipeSurvey/recipes/components/RecipeList',
   component : RecipeList,
   parameters: {
-
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered'
   },
 
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
@@ -46,7 +43,205 @@ export const Primary: Story = {
           { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
           { product: "水", type: "液体", byProduct: true, amount: 3 }
         ]
-      }
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "バッテリー",
+        recipeAlternateName: "",
+        machine: "混合機",
+        progressTime: 2,
+        energy: 10,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "バッテリー",
+        recipeAlternateName: "",
+        machine: "混合機",
+        progressTime: 2,
+        energy: 10,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "バッテリー",
+        recipeAlternateName: "",
+        machine: "混合機",
+        progressTime: 2,
+        energy: 10,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "バッテリー",
+        recipeAlternateName: "",
+        machine: "混合機",
+        progressTime: 2,
+        energy: 10,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "バッテリー",
+        recipeAlternateName: "",
+        machine: "混合機",
+        progressTime: 2,
+        energy: 10,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
+      {
+        id: "929CA595-6112-4488-BA79-812712C9BB1F",
+        recipeName: "鉄インゴット",
+        recipeAlternateName: "",
+        machine: "製錬炉",
+        progressTime: 2,
+        energy: 4,
+        energyUnit: "MW",
+        materials: [
+          { material: "硫酸", type: "液体", amount: 5 },
+          { material: "アルミナ溶液", type: "液体", amount: 4 },
+          { material: "アルミ筐体", type: "アイテム", amount: 2 },
+        ],
+        result: [
+          { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
+          { product: "水", type: "液体", byProduct: true, amount: 3 }
+        ]
+      },
     ]
   }
 };

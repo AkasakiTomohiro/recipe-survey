@@ -20,4 +20,9 @@ export interface ISearchFieldProps {
    * 検索ワード
    */
   searchWord: string;
+
+  /**
+   * 検索関数
+   */
+  searchFilter: (word: string) => void;
 }
