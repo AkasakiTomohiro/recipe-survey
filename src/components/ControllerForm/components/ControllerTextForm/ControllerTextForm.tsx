@@ -24,35 +24,40 @@ import { IControllerTextFormProps } from './types';
  *   return (<ControllerTextForm {...props}/>);
  * };
  */
-export const ControllerTextForm = (props: IControllerTextFormProps): JSX.Element => {
+export const ControllerTextForm = ({
+  name,
+  isAllGird,
+  onChange,
+  inputErrorHelperText,
+  isReadOnly,
+  ...otherProps
+}: IControllerTextFormProps): JSX.Element => {
   const { control, formState: { errors }} = useFormContext();
-  const { field } = useController({ name: props.name, control });
+  const { field } = useController({ name: name, control });
 
-  const errorMessage = getZodErrorMessage(props.name, errors);
+  const errorMessage = getZodErrorMessage(name, errors);
 
-  const onChange = useCallback((data: React.ChangeEvent<HTMLInputElement>): void => {
+  const onChangeWarp = useCallback((data: React.ChangeEvent<HTMLInputElement>): void => {
     let result: any = data.target.value;
-    if(props.type === 'number') {
+    if(otherProps.type === 'number') {
       result = Number(data.target.value);
     }
     field.onChange({ target: { value: result }});
-    if(props.onChange) {
-      props.onChange(result);
+    if(onChange) {
+      onChange(result);
     }
-  }, [props, field]);
+  }, [otherProps.type, field, onChange]);
 
   return (
-    <GridFormControl allGird={props.allGird}>
+    <GridFormControl isAllGird={isAllGird}>
       <TextField
+        {...otherProps}
         {...field}
-        onChange={onChange}
-        label={props.label}
-        type={props.type}
+        onChange={onChangeWarp}
         error={Boolean(errorMessage)}
-        helperText={Boolean(errorMessage) ? errorMessage : props.inputHelperText}
-        disabled={props.disabled}
+        helperText={Boolean(errorMessage) ? inputErrorHelperText : otherProps.helperText}
         variant="standard"
-        inputProps={{ readOnly: props.readOnly }}
+        inputProps={{ ...(otherProps.inputProps ?? {}), readOnly: isReadOnly }}
       />
     </GridFormControl>
   );

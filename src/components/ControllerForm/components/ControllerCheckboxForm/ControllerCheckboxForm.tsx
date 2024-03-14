@@ -22,33 +22,32 @@ import { IControllerCheckboxFormProps } from './types';
  *   return (<ControllerCheckboxForm {...props}/>);
  * };
  */
-export const ControllerCheckboxForm = (props: IControllerCheckboxFormProps): JSX.Element => {
+export const ControllerCheckboxForm = ({
+  label,
+  name,
+  isAllGird,
+  ...otherProps
+}: IControllerCheckboxFormProps): JSX.Element => {
   const { control, getValues } = useFormContext();
-  const { field } = useController({ name: props.name, control });
+  const { field } = useController({ name: name, control });
   const defaultValues = getValues();
-  const checkbox = (field: ControllerRenderProps<FieldValues, string>): JSX.Element => {
 
-    // ラベルなし
-    if(props.label === undefined) {
-      return (<Checkbox {...field} defaultChecked={defaultValues[props.name]} />);
-    }
-
-    // ラベルあり
+  const CheckBoxWrap = () => <Checkbox {...otherProps} {...field} defaultChecked={defaultValues[name]} />
+  
+  if(label === undefined) {
     return (
-      <FormControlLabel control={
-        <Checkbox
-          {...field}
-          defaultChecked={defaultValues[props.name]}
-        />
-      }
-      label={props.label}
-      />
+      <GridFormControl isAllGird={isAllGird}>
+        <CheckBoxWrap />
+      </GridFormControl>
     );
-  };
+  }
 
   return (
-    <GridFormControl allGird={props.allGird}>
-      {checkbox(field)}
+    <GridFormControl isAllGird={isAllGird}>
+      <FormControlLabel 
+        control={<CheckBoxWrap />}
+        label={label}
+      />
     </GridFormControl>
   );
 };

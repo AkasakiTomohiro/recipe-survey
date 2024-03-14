@@ -24,18 +24,25 @@ import { IControllerSelectFormProps } from './types';
  *   return (<ControllerSelectForm {...props}/>);
  * };
  */
-export const ControllerSelectForm = (props: IControllerSelectFormProps): JSX.Element => {
+export const ControllerSelectForm = ({
+  name,
+  label,
+  list,
+  isAllGird,
+  ...otherProps
+}: IControllerSelectFormProps): JSX.Element => {
   const { control } = useFormContext();
-  const { field } = useController({ name: props.name, control });
+  const { field } = useController({ name: name, control });
   return (
-    <GridFormControl allGird={props.allGird}>
-      <InputLabel id={props.name}>{props.label}</InputLabel>
+    <GridFormControl isAllGird={isAllGird}>
+      <InputLabel id={name}>{label}</InputLabel>
       <Select
+        {...otherProps}
         {...field}
-        labelId={props.name}
+        labelId={name}
       >
         {
-          props.list.map((m, i) => <MenuItem key={i} value={m}>{m}</MenuItem>)
+          list.map((m, i) => <MenuItem key={i} value={m}>{m}</MenuItem>)
         }
       </Select>
     </GridFormControl>

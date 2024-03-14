@@ -6,9 +6,11 @@
 
 import { FieldPath } from 'react-hook-form';
 
+import { IGridFormControlProps } from '@/components/ControllerForm';
 import { RequiredFilterType } from '@/types';
+import { SelectProps } from '@mui/material/Select';
 
-export interface IControllerSelectFormProps<T extends Record<string, any> = Record<string, any>> {
+export type IControllerSelectFormProps<T extends Record<string, any> = Record<string, any>> = SelectProps<any> & IGridFormControlProps & {
 
   /**
    * フォームの名前
@@ -24,9 +26,4 @@ export interface IControllerSelectFormProps<T extends Record<string, any> = Reco
    * 選択肢
    */
   list: string[];
-
-  /**
-   * Grid幅を横全体にするか
-   */
-  allGird?: boolean;
 }

@@ -42,3 +42,9 @@ export const Primary: Story = {
     name : 'name'
   }
 };
+
+export const NoLabel: Story = {
+  args: {
+    name : 'name'
+  }
+};

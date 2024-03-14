@@ -1,22 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary smoke-test 1`] = `
+exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ErrorTextForm play-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
-      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard css-11mm5xv-MuiFormLabel-root-MuiInputLabel-root"
-             data-shrink="false"
+      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary Mui-error MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+             data-shrink="true"
+             for=":r3:"
+             id=":r3:-label"
+      >
+        テキスト
+      </label>
+      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-error Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+        <input aria-invalid="true"
+               id=":r3:"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               type="text"
+               value="te"
+               name="text"
+               aria-describedby=":r3:-helper-text"
+        >
+      </div>
+      <p class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium Mui-focused MuiFormHelperText-filled css-10trzr7-MuiFormHelperText-root"
+         id=":r3:-helper-text"
+      >
+        2文字以内で入力してください
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm NumberForm play-test 1`] = `
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+  <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+    <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+             data-shrink="true"
+             for=":r2:"
+             id=":r2:-label"
+      >
+        テキスト
+      </label>
+      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+        <input aria-invalid="false"
+               id=":r2:"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               type="number"
+               name="num"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary play-test 1`] = `
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+  <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+    <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+      <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+             data-shrink="true"
              for=":r0:"
              id=":r0:-label"
       >
         テキスト
       </label>
-      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+      <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
         <input aria-invalid="false"
                id=":r0:"
                class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
                type="text"
                name="name"
+               value="test"
         >
       </div>
     </div>

@@ -16653,6 +16653,7 @@ __metadata:
     storybook-i18n: "npm:^2.0.13"
     ts-jest: "npm:^29.1.2"
     typescript: "npm:^5"
+    zod: "npm:^3.22.4"
   languageName: unknown
   linkType: soft
 
@@ -19925,7 +19926,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.11.6":
+"zod@npm:^3.11.6, zod@npm:^3.22.4":
   version: 3.22.4
   resolution: "zod@npm:3.22.4"
   checksum: 7578ab283dac0eee66a0ad0fc4a7f28c43e6745aadb3a529f59a4b851aa10872b3890398b3160f257f4b6817b4ce643debdda4fb21a2c040adda7862cab0a587

@@ -22,3 +22,10 @@ export const Primary: Story = {
     children: <div>aaa</div>
   }
 };
+
+export const AllGrid: Story = {
+  args: {
+    children : <div>aaa</div>,
+    isAllGird: true
+  }
+};

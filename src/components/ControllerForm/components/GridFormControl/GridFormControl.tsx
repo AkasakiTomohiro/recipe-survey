@@ -12,13 +12,10 @@ import { IGridFormControlProps } from './types';
 /**
  * Primary UI component for user interaction
  */
-export const GridFormControl = ({ children, allGird, ...other }: GridProps & IGridFormControlProps): JSX.Element => {
-
+export const GridFormControl = ({ children, isAllGird, ...other }: GridProps & IGridFormControlProps): JSX.Element => {
   return (
-    <Grid item xs={12} sm={allGird ? 12 : 6} {...other}>
-      {
-        children && <FormControl fullWidth variant="standard">{children}</FormControl>
-      }
+    <Grid item xs={12} sm={isAllGird ? 12 : 6} {...other}>
+      {children && <FormControl fullWidth variant="standard">{children}</FormControl>}
     </Grid>
   );
 };

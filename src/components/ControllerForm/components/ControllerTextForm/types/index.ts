@@ -6,9 +6,11 @@
 
 import { FieldPath } from 'react-hook-form';
 
+import { IGridFormControlProps } from '@/components/ControllerForm';
 import { RequiredFilterType } from '@/types';
+import { TextFieldProps } from '@mui/material/TextField';
 
-export type IControllerTextFormProps<T extends Record<string, any> = Record<string, any>> = {
+export type IControllerTextFormProps<T extends Record<string, any> = Record<string, any>> = IGridFormControlProps & Omit<TextFieldProps, "variant" | "error"> & {
 
   /**
    * フォームの名前
@@ -21,34 +23,14 @@ export type IControllerTextFormProps<T extends Record<string, any> = Record<stri
    name: FieldPath<RequiredFilterType<T, number | string>>;
 
    /**
-    * フォームの種類を定義
-    */
-   type?: string;
-
-   /**
-    * 制御を無効化するか
-    */
-   disabled?: boolean;
-
-   /**
     * デフォルトで表示したいヘルパーテキスト
     *
     * @details バリデーションエラーがある場合は表示されない
     */
-   inputHelperText?: string;
-
-   /**
-    * OnChangeハンドル
-    */
-   onChange?: (value: any) => void;
-
-   /**
-    * Grid幅を横全体にするか
-    */
-   allGird?: boolean;
+   inputErrorHelperText?: string;
 
    /**
     * 編集可能かどうか
     */
-   readOnly?: boolean;
+   isReadOnly?: boolean;
 }

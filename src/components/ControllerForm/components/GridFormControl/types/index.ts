@@ -9,5 +9,5 @@ export interface IGridFormControlProps {
   /**
    * Grid幅を横全体にするか
    */
-   allGird?: boolean;
+   isAllGird?: boolean;
 }

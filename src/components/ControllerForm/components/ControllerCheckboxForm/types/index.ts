@@ -6,9 +6,11 @@
 
 import { FieldPath } from 'react-hook-form';
 
+import { IGridFormControlProps } from '@/components/ControllerForm';
 import { RequiredFilterType } from '@/types';
+import { CheckboxProps } from '@mui/material/Checkbox';
 
-export interface IControllerCheckboxFormProps<T extends Record<string, any> = Record<string, any>> {
+export type IControllerCheckboxFormProps<T extends Record<string, any> = Record<string, any>> = CheckboxProps & IGridFormControlProps & {
 
   /**
    * フォームの名前
@@ -19,9 +21,4 @@ export interface IControllerCheckboxFormProps<T extends Record<string, any> = Re
    * controlで管理しているオブジェクトのキーを指定
    */
   name: FieldPath<RequiredFilterType<T, boolean>>;
-
-  /**
-   * Grid幅を横全体にするか
-   */
-  allGird?: boolean;
 }
