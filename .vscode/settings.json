@@ -10,5 +10,17 @@
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.ts",
+    "*.js": "${capture}.js, ${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.jsx, ${capture}.css, ${capture}.*.js",
+    "*.tsx": "${capture}.tsx, ${capture}.css, ${capture}.*.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock",
+    ".eslintrc.js": ".eslintignore, .eslintcache",
+    "jest.config.js": "jest.setup.ts, jest.setup.js, jest.matchers.ts, jest.matchers.js",
+    "*": "${basename}.*.${extname}"
   }
 }
