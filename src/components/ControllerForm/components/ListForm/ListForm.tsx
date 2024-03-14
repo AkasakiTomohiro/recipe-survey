@@ -5,6 +5,7 @@
  */
 
 import { useTranslations } from 'next-intl';
+import { useCallback } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 
 import { DeleteIcon } from '@/components/Icon/Icon';
@@ -49,9 +50,9 @@ export const ListForm = (props: IListFormProps): JSX.Element => {
     name: props.name
   });
 
-  const addRow = (): void => {
+  const addRow = useCallback(() => {
     append(props.initialValue);
-  };
+  }, [append, props.initialValue]);
 
   return (
     <>
