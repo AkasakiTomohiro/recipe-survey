@@ -6,10 +6,15 @@
 
 import type { Recipe } from "@/providers/profile/hooks/UseRecipe/types";
 
-export interface IRecipeListProps {
+export interface IRecipeRowProps {
 
   /**
-   * レシピリスト
+   * レシピ
    */
-  recipes: Recipe[];
+  recipe: Recipe;
+
+  /**
+   * インデックス
+   */
+  index: number;
 }
