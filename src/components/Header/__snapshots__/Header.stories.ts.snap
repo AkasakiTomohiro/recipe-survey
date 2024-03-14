@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`./Header Primary smoke-test 1`] = `
+<div class="MuiBox-root css-12uhsvm">
+  <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-t66lml-MuiPaper-root-MuiAppBar-root">
+    <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-8gjog7-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+    >
+      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+           focusable="false"
+           aria-hidden="true"
+           viewbox="0 0 24 24"
+           data-testid="DensityMediumOutlinedIcon"
+           style="color: black;"
+      >
+        <path d="M3 3h18v2H3zm0 16h18v2H3zm0-8h18v2H3z">
+        </path>
+      </svg>
+      <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+      </span>
+    </button>
+    <div class="MuiTypography-root MuiTypography-body1 css-1q8acoz-MuiTypography-root">
+      Recipe Survey
+    </div>
+    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-z5brkq-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root">
+      <div tabindex="0"
+           role="combobox"
+           aria-controls=":r0:"
+           aria-expanded="false"
+           aria-haspopup="listbox"
+           aria-labelledby="languageSelectLabel languageSelect"
+           id="languageSelect"
+           class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      >
+        <span class="notranslate">
+          ​
+        </span>
+      </div>
+      <input aria-invalid="false"
+             aria-hidden="true"
+             tabindex="-1"
+             class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+             value="日本語"
+      >
+      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+           focusable="false"
+           aria-hidden="true"
+           viewbox="0 0 24 24"
+           data-testid="ArrowDropDownIcon"
+      >
+        <path d="M7 10l5 5 5-5z">
+        </path>
+      </svg>
+      <fieldset aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend class="css-yjsfm1">
+          <span>
+            Language
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </header>
+</div>
+`;

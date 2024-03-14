@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeSurvey/components/Dialog Cancel smoke-test 1`] = `""`;
+
+exports[`RecipeSurvey/components/Dialog Primary smoke-test 1`] = `""`;

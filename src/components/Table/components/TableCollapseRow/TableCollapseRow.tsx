@@ -20,7 +20,7 @@ export const TableCollapseRow = ({ row, index, Collapse }: ITableCollapseRowProp
   return (
     <>
       <MuiTableRow hover>
-      <TableCell style={{ borderBottom: 'unset' }}>
+      <TableCell>
           <IconButton
             aria-label="expand row"
             size="small"
@@ -32,7 +32,7 @@ export const TableCollapseRow = ({ row, index, Collapse }: ITableCollapseRowProp
         {row.map((m, i) => (<TableCell key={`table-row-${index}-cell-${i}`}>{m}</TableCell>))}
       </MuiTableRow>
       <MuiTableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={row.length + 1}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0, borderBottom: 'unset' }} colSpan={row.length + 1}>
           <MuiCollapse in={open} timeout="auto" unmountOnExit>
             <Collapse index={index} />
           </MuiCollapse>

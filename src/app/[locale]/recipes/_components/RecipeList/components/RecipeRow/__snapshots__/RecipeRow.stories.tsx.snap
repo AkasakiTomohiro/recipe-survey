@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeSurvey/recipes/components/RecipeRow Primary smoke-test 1`] = `
+<div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
+  <table class="MuiTable-root css-qzpwgq-MuiTable-root">
+    <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root">
+      <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                  aria-label="expand row"
+          >
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                 focusable="false"
+                 aria-hidden="true"
+                 viewbox="0 0 24 24"
+                 data-testid="KeyboardArrowDownIcon"
+            >
+              <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z">
+              </path>
+            </svg>
+            <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+            </span>
+          </button>
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          バッテリー
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          混合機
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          2
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          10
+        </td>
+      </tr>
+      <tr class="MuiTableRow-root css-dvunen-MuiTableRow-root">
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root"
+            colspan="6"
+            style="padding-bottom: 0px; padding-top: 0px; border-bottom: unset;"
+        >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
