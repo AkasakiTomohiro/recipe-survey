@@ -1,5 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`RecipeSurvey/components/ControllerForm/ListForm AddRow play-test 1`] = `
+<div class="MuiBox-root css-2ertzu">
+  <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-vbxad1-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+  >
+    追加
+    <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+      <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate"
+            style="width: 56.3449px; height: 56.3449px; top: -10.1725px; left: 3.82754px;"
+      >
+        <span class="MuiTouchRipple-child MuiTouchRipple-childLeaving MuiTouchRipple-childPulsate">
+        </span>
+      </span>
+    </span>
+  </button>
+</div>
+<div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
+  <table class="MuiTable-root css-twub5u-MuiTable-root"
+         aria-label="list form"
+  >
+    <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root">
+      <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+            <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+              <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+                <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+                       data-shrink="true"
+                       for=":r4:"
+                       id=":r4:-label"
+                >
+                  アイテム種別
+                </label>
+                <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+                  <input aria-invalid="false"
+                         id=":r4:"
+                         class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+                         type="text"
+                         value="M1"
+                         name="materialTypes.0.materialType"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12g5br3-MuiTableCell-root">
+          <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                  aria-label="delete"
+          >
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                 focusable="false"
+                 aria-hidden="true"
+                 viewbox="0 0 24 24"
+                 data-testid="DeleteIcon"
+            >
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z">
+              </path>
+            </svg>
+            <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+            <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+              <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+                <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+                       data-shrink="true"
+                       for=":r5:"
+                       id=":r5:-label"
+                >
+                  アイテム種別
+                </label>
+                <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+                  <input aria-invalid="false"
+                         id=":r5:"
+                         class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+                         type="text"
+                         value="M2"
+                         name="materialTypes.1.materialType"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12g5br3-MuiTableCell-root">
+          <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                  aria-label="delete"
+          >
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                 focusable="false"
+                 aria-hidden="true"
+                 viewbox="0 0 24 24"
+                 data-testid="DeleteIcon"
+            >
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z">
+              </path>
+            </svg>
+            <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+            </span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`RecipeSurvey/components/ControllerForm/ListForm DeleteRow play-test 1`] = `
+<div class="MuiBox-root css-2ertzu">
+  <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-vbxad1-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+  >
+    追加
+    <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+      <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate"
+            style="width: 56.3449px; height: 56.3449px; top: -10.1725px; left: 3.82754px;"
+      >
+        <span class="MuiTouchRipple-child MuiTouchRipple-childLeaving MuiTouchRipple-childPulsate">
+        </span>
+      </span>
+    </span>
+  </button>
+</div>
+<div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
+  <table class="MuiTable-root css-twub5u-MuiTable-root"
+         aria-label="list form"
+  >
+    <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root">
+      <tr class="MuiTableRow-root MuiTableRow-hover css-dvunen-MuiTableRow-root">
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-16blcct-MuiTableCell-root">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
+            <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
+              <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
+                <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"
+                       data-shrink="true"
+                       for=":r8:"
+                       id=":r8:-label"
+                >
+                  アイテム種別
+                </label>
+                <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
+                  <input aria-invalid="false"
+                         id=":r8:"
+                         class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+                         type="text"
+                         value="M2"
+                         name="materialTypes.0.materialType"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12g5br3-MuiTableCell-root">
+          <button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="-1"
+                  type="button"
+                  disabled
+                  aria-label="delete"
+          >
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                 focusable="false"
+                 aria-hidden="true"
+                 viewbox="0 0 24 24"
+                 data-testid="DeleteIcon"
+            >
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z">
+              </path>
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`RecipeSurvey/components/ControllerForm/ListForm MaterialType smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
