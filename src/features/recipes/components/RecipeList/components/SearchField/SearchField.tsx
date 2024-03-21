@@ -5,9 +5,9 @@
  */
 
 import { useCallback } from 'react';
+import { SearchIcon } from '~/components/Icon';
+import { useTransLocations } from '~/i18n';
 
-import { SearchIcon } from '@/components/Icon';
-import { useTransLocations } from '@/i18n';
 import { InputAdornment, TextField } from '@mui/material';
 
 import { ISearchFieldProps } from './types';

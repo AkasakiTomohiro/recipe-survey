@@ -5,9 +5,9 @@
  */
 
 import { useMemo } from 'react';
+import { TableCollapseRow, TableHeader, TableRow } from '~/components/Table';
+import { useTransLocations } from '~/i18n';
 
-import { TableCollapseRow, TableHeader, TableRow } from '@/components/Table';
-import { useTransLocations } from '@/i18n';
 import { Box, Table, TableBody, Typography } from '@mui/material';
 
 import { IRecipeRowProps } from './types';

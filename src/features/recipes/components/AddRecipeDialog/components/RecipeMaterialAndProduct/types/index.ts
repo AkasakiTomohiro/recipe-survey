@@ -4,7 +4,7 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { RecipeMaterial, RecipeResult } from '@/lib/RecipeValidator';
+import { RecipeMaterial, RecipeResult } from '~/lib/RecipeValidator';
 
 export interface IRecipeMaterialAndProductContentsProps {
 

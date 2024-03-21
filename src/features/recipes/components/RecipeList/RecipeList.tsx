@@ -4,10 +4,10 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 import { useMemo, useState } from 'react';
+import { TableFooter } from '~/components/Table/components/TableFooter';
+import { TableHeader } from '~/components/Table/components/TableHeader';
+import { useTransLocations } from '~/i18n';
 
-import { TableFooter } from '@/components/Table/components/TableFooter';
-import { TableHeader } from '@/components/Table/components/TableHeader';
-import { useTransLocations } from '@/i18n';
 import { Table, TableBody } from '@mui/material';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';

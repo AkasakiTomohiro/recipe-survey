@@ -6,9 +6,10 @@
 
 import {
     ControllerSelectForm, ControllerTextForm, IControllerSelectFormProps, IControllerTextFormProps
-} from '@/components/ControllerForm';
-import { useTransLocations } from '@/i18n';
-import { RecipeBasicInfo } from '@/lib/RecipeValidator';
+} from '~/components/ControllerForm';
+import { useTransLocations } from '~/i18n';
+import { RecipeBasicInfo } from '~/lib/RecipeValidator';
+
 import { Grid } from '@mui/material';
 
 import { IRecipeBasicInfoContentsProps } from './types';

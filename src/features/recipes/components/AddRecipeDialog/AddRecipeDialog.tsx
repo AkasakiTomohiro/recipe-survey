@@ -6,13 +6,13 @@
 
 import { useCallback, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
-
-import { useTransLocations } from '@/i18n';
+import { useTransLocations } from '~/i18n';
 import {
     Recipe, RecipeBasicInfo, RecipeBasicInfoValidator, RecipeMaterialAndProduct, RecipeMaterialAndProductValidator, RecipeValidator
-} from '@/lib/RecipeValidator';
-import { useAddRecipe, useSelectedProfileId } from '@/providers/profile/hooks';
-import { zodErrorMaps } from '@/utils/ZodErrorMap';
+} from '~/lib/RecipeValidator';
+import { useAddRecipe, useSelectedProfileId } from '~/providers/profile/hooks';
+import { zodErrorMaps } from '~/utils/ZodErrorMap';
+
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button, DialogActions, DialogContent, DialogTitle, Step, StepLabel } from '@mui/material';
 import MuiDialog from '@mui/material/Dialog';

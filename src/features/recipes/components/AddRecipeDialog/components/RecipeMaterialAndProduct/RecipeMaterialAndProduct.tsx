@@ -5,13 +5,13 @@
  */
 
 import { useMemo } from 'react';
-
 import {
     ControllerCheckboxForm, ControllerTextForm, IControllerCheckboxFormProps, IControllerTextFormProps
-} from '@/components/ControllerForm';
-import { TableForm } from '@/components/ControllerForm/components/TableForm';
-import { useTransLocations } from '@/i18n';
-import { RecipeMaterialAndProduct } from '@/lib/RecipeValidator';
+} from '~/components/ControllerForm';
+import { TableForm } from '~/components/ControllerForm/components/TableForm';
+import { useTransLocations } from '~/i18n';
+import { RecipeMaterialAndProduct } from '~/lib/RecipeValidator';
+
 import { Box, Typography } from '@mui/material';
 
 import { IRecipeMaterialAndProductContentsProps } from './types';
