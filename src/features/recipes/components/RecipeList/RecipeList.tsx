@@ -6,7 +6,7 @@
 import { useMemo, useState } from 'react';
 import { TableFooter } from '~/components/Table/components/TableFooter';
 import { TableHeader } from '~/components/Table/components/TableHeader';
-import { useTransLocations } from '~/i18n';
+import { useInternationalization } from '~/hooks/UseInternationalization';
 
 import { Table, TableBody } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -19,7 +19,7 @@ import { SearchField } from './components/SearchField/SearchField';
 import { IRecipeListProps } from './types';
 
 export function RecipeList(props: IRecipeListProps): JSX.Element {
-  const t = useTransLocations();
+  const { t } = useInternationalization();
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState<number>(10);
   const [numOfLines, setNumOfLines] = useState<number>(props.recipes.length);

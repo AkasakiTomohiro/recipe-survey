@@ -13,7 +13,8 @@
     "edit": "編集",
     "cancel": "キャンセル",
     "save": "保存",
-    "select": "選択"
+    "select": "選択",
+    "confirm": "確認"
   },
   "recipes": {
     "title": "レシピ一覧",
@@ -35,8 +36,7 @@
     "registerRecipe": {
       "title": "レシピ登録",
       "basicInfo": "基本情報",
-      "materialAndProduct": "素材と成果物",
-      "confirm": "確認"
+      "materialAndProduct": "素材と成果物"
     }
   }
 }

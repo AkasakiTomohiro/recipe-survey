@@ -6,7 +6,7 @@
 
 import { useCallback, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
-import { useTransLocations } from '~/i18n';
+import { useInternationalization } from '~/hooks/UseInternationalization';
 import {
     Recipe, RecipeBasicInfo, RecipeBasicInfoValidator, RecipeMaterialAndProduct, RecipeMaterialAndProductValidator, RecipeValidator
 } from '~/lib/RecipeValidator';
@@ -66,7 +66,7 @@ const Stepper = (props: IStepperProps): JSX.Element => {
 }
 
 export const AddRecipeDialog = (props: IAddRecipeDialogProps): JSX.Element => {
-  const t = useTransLocations();
+  const { t } = useInternationalization();
   const [activeStep, setActiveStep] = useState(0);
   const [skipped, setSkipped] = useState(new Set<number>());
   const [profileId] = useSelectedProfileId();
