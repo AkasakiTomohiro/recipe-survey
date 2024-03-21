@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerSelectForm Primary smoke-test 1`] = `
+exports[`components/ControllerForm/ControllerSelectForm Primary smoke-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-standard css-zx681a-MuiFormLabel-root-MuiInputLabel-root"

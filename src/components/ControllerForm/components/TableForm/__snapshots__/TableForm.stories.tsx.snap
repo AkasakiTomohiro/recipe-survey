@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/components/ControllerForm/TableForm MaterialType smoke-test 1`] = `
+exports[`components/ControllerForm/TableForm MaterialType smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"
@@ -55,7 +55,7 @@ exports[`RecipeSurvey/components/ControllerForm/TableForm MaterialType smoke-tes
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/TableForm ReadOnly smoke-test 1`] = `
+exports[`components/ControllerForm/TableForm ReadOnly smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"
@@ -92,7 +92,7 @@ exports[`RecipeSurvey/components/ControllerForm/TableForm ReadOnly smoke-test 1`
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/TableForm Unit smoke-test 1`] = `
+exports[`components/ControllerForm/TableForm Unit smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/components/ControllerForm/ListForm AddRow play-test 1`] = `
+exports[`components/ControllerForm/ListForm AddRow play-test 1`] = `
 <div class="MuiBox-root css-2ertzu">
   <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-vbxad1-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
@@ -123,7 +123,7 @@ exports[`RecipeSurvey/components/ControllerForm/ListForm AddRow play-test 1`] = 
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ListForm DeleteRow play-test 1`] = `
+exports[`components/ControllerForm/ListForm DeleteRow play-test 1`] = `
 <div class="MuiBox-root css-2ertzu">
   <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-vbxad1-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
@@ -200,7 +200,7 @@ exports[`RecipeSurvey/components/ControllerForm/ListForm DeleteRow play-test 1`]
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ListForm MaterialType smoke-test 1`] = `
+exports[`components/ControllerForm/ListForm MaterialType smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"
@@ -255,7 +255,7 @@ exports[`RecipeSurvey/components/ControllerForm/ListForm MaterialType smoke-test
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ListForm ReadOnly smoke-test 1`] = `
+exports[`components/ControllerForm/ListForm ReadOnly smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"
@@ -292,7 +292,7 @@ exports[`RecipeSurvey/components/ControllerForm/ListForm ReadOnly smoke-test 1`]
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ListForm Unit smoke-test 1`] = `
+exports[`components/ControllerForm/ListForm Unit smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-twub5u-MuiTable-root"
          aria-label="list form"

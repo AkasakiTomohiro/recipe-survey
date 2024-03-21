@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/recipes/components/RecipeRow Primary smoke-test 1`] = `
+exports[`features/Recipe/RecipeList/RecipeRow Primary smoke-test 1`] = `
 <div class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root">
   <table class="MuiTable-root css-qzpwgq-MuiTable-root">
     <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root">

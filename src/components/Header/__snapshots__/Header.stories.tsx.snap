@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`./Header Primary smoke-test 1`] = `
+exports[`components/Header Primary smoke-test 1`] = `
 <div class="MuiBox-root css-12uhsvm">
   <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-t66lml-MuiPaper-root-MuiAppBar-root">
     <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-8gjog7-MuiButtonBase-root-MuiIconButton-root"
@@ -29,8 +29,7 @@ exports[`./Header Primary smoke-test 1`] = `
            aria-controls=":r1:"
            aria-expanded="false"
            aria-haspopup="listbox"
-           aria-labelledby="languageSelectLabel languageSelect"
-           id="languageSelect"
+           aria-labelledby="languageSelectLabel"
            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       >
         <span class="notranslate">

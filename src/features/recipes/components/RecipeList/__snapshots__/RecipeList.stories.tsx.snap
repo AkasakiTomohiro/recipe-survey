@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/recipes/components/RecipeList Primary smoke-test 1`] = `
+exports[`features/Recipe/RecipeList Primary smoke-test 1`] = `
 <h5 class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root">
   レシピ一覧
 </h5>
@@ -8,16 +8,16 @@ exports[`RecipeSurvey/recipes/components/RecipeList Primary smoke-test 1`] = `
   <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth MuiTextField-root css-17vbkzs-MuiFormControl-root-MuiTextField-root">
     <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-standard css-11mm5xv-MuiFormLabel-root-MuiInputLabel-root"
            data-shrink="false"
-           for=":r0:"
-           id=":r0:-label"
+           for=":r4:"
+           id=":r4:-label"
     >
       検索
     </label>
     <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd css-se4mu1-MuiInputBase-root-MuiInput-root">
       <input aria-invalid="false"
-             id=":r0:"
-             class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd css-1x51dt5-MuiInputBase-input-MuiInput-input"
+             id=":r4:"
              type="text"
+             class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd css-1x51dt5-MuiInputBase-input-MuiInput-input"
              value
       >
       <div class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-standard MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root">
@@ -499,18 +499,18 @@ exports[`RecipeSurvey/recipes/components/RecipeList Primary smoke-test 1`] = `
       <div class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer">
       </div>
       <p class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-         id=":r2:"
+         id=":r6:"
       >
         Rows per page:
       </p>
       <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-9fvjej-MuiInputBase-root-MuiTablePagination-select">
         <div tabindex="0"
              role="combobox"
-             aria-controls=":r3:"
+             aria-controls=":r7:"
              aria-expanded="false"
              aria-haspopup="listbox"
-             aria-labelledby=":r2: :r1:"
-             id=":r1:"
+             aria-labelledby=":r6: :r5:"
+             id=":r5:"
              class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
         >
           10
@@ -574,4 +574,21 @@ exports[`RecipeSurvey/recipes/components/RecipeList Primary smoke-test 1`] = `
     </div>
   </div>
 </div>
+<button class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-kbsjoa-MuiButtonBase-root-MuiFab-root"
+        tabindex="0"
+        type="button"
+        aria-label="add"
+>
+  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+       focusable="false"
+       aria-hidden="true"
+       viewbox="0 0 24 24"
+       data-testid="AddIcon"
+  >
+    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z">
+    </path>
+  </svg>
+  <span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root">
+  </span>
+</button>
 `;

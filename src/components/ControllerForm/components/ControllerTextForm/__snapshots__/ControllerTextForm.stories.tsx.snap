@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ErrorTextForm play-test 1`] = `
+exports[`components/ControllerForm/ControllerTextForm ErrorTextForm play-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
@@ -31,7 +31,7 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ErrorTextForm
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm NumberForm play-test 1`] = `
+exports[`components/ControllerForm/ControllerTextForm NumberForm play-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
@@ -56,7 +56,7 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm NumberForm pl
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary play-test 1`] = `
+exports[`components/ControllerForm/ControllerTextForm Primary play-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
@@ -81,7 +81,7 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary play-
 </div>
 `;
 
-exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ReadOnly smoke-test 1`] = `
+exports[`components/ControllerForm/ControllerTextForm ReadOnly smoke-test 1`] = `
 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-13i4rnv-MuiGrid-root">
   <div class="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root">
     <div class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root">
