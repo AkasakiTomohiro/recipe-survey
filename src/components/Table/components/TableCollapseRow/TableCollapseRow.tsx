@@ -5,8 +5,8 @@
  */
 
 import { useState } from 'react';
+import { KeyboardArrowDownIcon, KeyboardArrowUpIcon } from '~/components/Icon';
 
-import { KeyboardArrowDownIcon, KeyboardArrowUpIcon } from '@/components/Icon';
 import MuiCollapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import TableCell from '@mui/material/TableCell';

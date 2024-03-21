@@ -5,9 +5,9 @@
  */
 
 import { FieldPath } from 'react-hook-form';
+import { IGridFormControlProps } from '~/components/ControllerForm';
+import { RequiredFilterType } from '~/types';
 
-import { IGridFormControlProps } from '@/components/ControllerForm';
-import { RequiredFilterType } from '@/types';
 import { SelectProps } from '@mui/material/Select';
 
 export type IControllerSelectFormProps<T extends Record<string, any> = Record<string, any>> = SelectProps<any> & IGridFormControlProps & {

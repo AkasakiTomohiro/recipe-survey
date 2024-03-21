@@ -24,7 +24,13 @@ exports[`components/Table/TableCollapseRow CollapseOpen play-test 1`] = `
               <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate"
                     style="width: 35px; height: 35px; top: -0.5px; left: -0.5px;"
               >
-                <span class="MuiTouchRipple-child MuiTouchRipple-childLeaving MuiTouchRipple-childPulsate">
+                <span class="MuiTouchRipple-child MuiTouchRipple-childPulsate">
+                </span>
+              </span>
+              <span class="css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible"
+                    style="width: 35px; height: 35px; top: -0.5px; left: -0.5px;"
+              >
+                <span class="MuiTouchRipple-child MuiTouchRipple-childLeaving">
                 </span>
               </span>
             </span>

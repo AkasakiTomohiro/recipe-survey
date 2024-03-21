@@ -5,9 +5,9 @@
  */
 
 import { FieldPath } from 'react-hook-form';
+import { IGridFormControlProps } from '~/components/ControllerForm';
+import { RequiredFilterType } from '~/types';
 
-import { IGridFormControlProps } from '@/components/ControllerForm';
-import { RequiredFilterType } from '@/types';
 import { TextFieldProps } from '@mui/material/TextField';
 
 export type IControllerTextFormProps<T extends Record<string, any> = Record<string, any>> = IGridFormControlProps & Omit<TextFieldProps, "variant" | "error"> & {

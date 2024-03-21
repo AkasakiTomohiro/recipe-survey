@@ -61,8 +61,13 @@ export const RecipeMaterialValidator = z
  */
 export type RecipeMaterial = z.infer<typeof RecipeMaterialValidator>;
 
-export const RecipeBasicInfoValidator = z
+export const RecipeValidator = z
   .object({
+
+    /**
+     * レシピID
+     */
+    id: z.string().uuid(),
 
     /**
      * レシピ名
@@ -92,17 +97,7 @@ export const RecipeBasicInfoValidator = z
     /**
      * エネルギー単位
      */
-    energyUnit: z.string().min(1).max(20)
-  })
-  .required();
-
-/**
- * レシピの基本情報
- */
-export type RecipeBasicInfo = z.infer<typeof RecipeBasicInfoValidator>
-
-export const RecipeMaterialAndProductValidator = z
-  .object({
+    energyUnit: z.string().min(1).max(20),
 
     /**
      * 生産物一覧
@@ -115,23 +110,6 @@ export const RecipeMaterialAndProductValidator = z
     materials: z.array(RecipeMaterialValidator).min(1).max(4)
   })
   .required();
-
-/**
- * レシピの素材と成果物
- */
-export type RecipeMaterialAndProduct = z.infer<typeof RecipeMaterialAndProductValidator>
-
-export const RecipeValidator = z
-  .object({
-
-    /**
-     * レシピID
-     */
-    id: z.string().uuid(),
-  })
-  .required()
-  .and(RecipeBasicInfoValidator)
-  .and(RecipeMaterialAndProductValidator);
 
 /**
  * レシピ

@@ -14,6 +14,6 @@ import { UseTableProps, UseTableResult } from './types';
 export function useTable<
   TRow extends Record<string, any>
 >(props: UseTableProps<TRow>): UseTableResult<TRow> {
-  const [rows, setRows] = useState<TRow[]>(props.rows);
+  const [rows] = useState<TRow[]>(props.rows);
   return { rows };
 }

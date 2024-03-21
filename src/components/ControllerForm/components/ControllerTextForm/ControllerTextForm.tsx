@@ -6,8 +6,8 @@
 
 import { useCallback } from 'react';
 import { useController, useFormContext } from 'react-hook-form';
+import { getZodErrorMessage } from '~/utils/ZodErrorParse';
 
-import { getZodErrorMessage } from '@/utils/ZodErrorParse';
 import TextField from '@mui/material/TextField';
 
 import { GridFormControl } from '../GridFormControl';
@@ -55,7 +55,7 @@ export const ControllerTextForm = ({
         {...field}
         onChange={onChangeWarp}
         error={Boolean(errorMessage)}
-        helperText={Boolean(errorMessage) ? inputErrorHelperText : otherProps.helperText}
+        helperText={errorMessage ? inputErrorHelperText : otherProps.helperText}
         variant="standard"
         inputProps={{ ...(otherProps.inputProps ?? {}), readOnly: isReadOnly }}
       />

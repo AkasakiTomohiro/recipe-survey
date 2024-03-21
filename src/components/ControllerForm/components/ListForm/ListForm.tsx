@@ -4,11 +4,11 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { useTranslations } from 'next-intl';
 import { useCallback } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
+import { DeleteIcon } from '~/components/Icon/Icon';
+import { useInternationalization } from '~/hooks/UseInternationalization/UseInternationalization';
 
-import { DeleteIcon } from '@/components/Icon/Icon';
 import { Box, Button, IconButton } from '@mui/material';
 import MuiTable from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -43,7 +43,7 @@ const FormRow = (props: FormRowProps): JSX.Element => {
  */
 export const ListForm = (props: IListFormProps): JSX.Element => {
   const { control } = useFormContext();
-  const t = useTranslations();
+  const {t} = useInternationalization();
 
   const { fields, append, remove } = useFieldArray({
     control,

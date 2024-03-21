@@ -5,8 +5,7 @@
  */
 
 import { useCallback } from 'react';
-
-import { setLocalStorage, useLocalStorage, UseLocalStorageResult } from '@/hooks';
+import { setLocalStorage, useLocalStorage, UseLocalStorageResult } from '~/hooks/UseLocalStorage';
 
 import { Recipe } from './types';
 import { createRecipeId, createRecipeIdListId } from './utils';
@@ -31,7 +30,7 @@ export type UseAddRecipeResult = (recipe: Recipe) => void;
  * @param profileId プロファイルID
  */
 export function useAddRecipe(profileId: string): UseAddRecipeResult {
-  const [recipeIds, setRecipeIds] = useRecipeIds(profileId);
+  const [, setRecipeIds] = useRecipeIds(profileId);
 
   const addRecipe = useCallback((recipe: Recipe) => {
     const recipeId = createRecipeId(recipe.id);

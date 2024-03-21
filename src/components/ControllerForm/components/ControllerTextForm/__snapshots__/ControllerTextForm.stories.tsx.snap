@@ -14,10 +14,10 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ErrorTextForm
       <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-error Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
         <input aria-invalid="true"
                id=":r3:"
-               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-               type="text"
-               value="te"
                name="text"
+               type="text"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               value="te"
                aria-describedby=":r3:-helper-text"
         >
       </div>
@@ -45,9 +45,10 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm NumberForm pl
       <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
         <input aria-invalid="false"
                id=":r2:"
-               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-               type="number"
                name="num"
+               type="number"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               value
         >
       </div>
     </div>
@@ -69,9 +70,9 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm Primary play-
       <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
         <input aria-invalid="false"
                id=":r0:"
-               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-               type="text"
                name="name"
+               type="text"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
                value="test"
         >
       </div>
@@ -94,10 +95,11 @@ exports[`RecipeSurvey/components/ControllerForm/ControllerTextForm ReadOnly smok
       <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-60qyb9-MuiInputBase-root-MuiInput-root">
         <input aria-invalid="false"
                id=":r1:"
-               readonly
-               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-               type="text"
                name="name"
+               readonly
+               type="text"
+               class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+               value
         >
       </div>
     </div>

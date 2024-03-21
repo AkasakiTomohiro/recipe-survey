@@ -28,7 +28,7 @@ export function useProfile(): ProfileContextType {
 }
 
 export const ProfileProvider = ({ children }: ProfileProviderProps): JSX.Element => {
-  const [selectedProfileId, setSelectedProfileId] = useSelectedProfileId();
+  const [selectedProfileId] = useSelectedProfileId();
   const getRecipes = useCallback(() => [], []);
   return (
     <ProfileContext.Provider value={{

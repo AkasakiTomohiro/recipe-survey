@@ -4,6 +4,5 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-export * from './i18n';
-export * from './hooks';
-export * from './libs';
+export * from "./i18n";
+export * from "./types";

@@ -5,19 +5,16 @@
  */
 
 import * as React from 'react';
+import { useInternationalization } from '~/hooks/UseInternationalization/UseInternationalization';
 
-import { useTransLocations } from '@/i18n';
 import DensityMediumOutlinedIcon from '@mui/icons-material/DensityMediumOutlined';
-import {
-    AppBar, Box, IconButton, List, ListItemButton, ListItemText, MenuItem, Select, SelectChangeEvent, Toolbar, Typography
-} from '@mui/material';
-
-type Language = 'Jp' | 'En';
+import { AppBar, Box, IconButton, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
 
 // 設定した言語は引数で取得できるように変更する
 // TODO: Drawerをつける
 export const Header = (): JSX.Element => {
-  const t = useTransLocations()
+  const {t} = useInternationalization();
+
   return (
     <Box height={50} sx={{ display: 'flex' }}>
       <AppBar position='static' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
@@ -45,11 +42,10 @@ const LanguageSelectBox = (): JSX.Element => {
 
   return (
     <Select
-    labelId='languageSelectLabel'
-    id='languageSelect'
-    value={language}
-    onChange={languageChange}
-    label='Language'
+      labelId='languageSelectLabel'
+      value={language}
+      onChange={languageChange}
+      label='Language'
     >
       <MenuItem value={0}>
         English
@@ -60,7 +56,7 @@ const LanguageSelectBox = (): JSX.Element => {
     </Select>
   )
 }
-
+/*
 const GameSelectBox = (): JSX.Element => {
 
   const [game, setGame] = React.useState<string>('Satisfactory');
@@ -106,3 +102,4 @@ const SideBar = (): JSX.Element => {
   )
 
 }
+*/

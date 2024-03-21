@@ -1,27 +1,29 @@
 import type { Preview } from "@storybook/react";
-import { NextIntlClientProvider } from 'next-intl';
 import React from 'react';
-import i18n from 'storybook-i18n/preview';
 
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
 
-import enJson from '../src/i18n/locales/en.json';
-import jpJson from '../src/i18n/locales/ja.json';
+import i18n from '../src/i18n/i18n';
 import { lightTheme } from '../src/theme/LightTheme';
 
-// @ts-ignore
-const i18nDecorators = i18n?.decorators || [];
-
-// 翻訳マップ
-const messages = {
-  en: enJson,
-  ja: jpJson
-};
+const decorators: NonNullable<Preview["decorators"]> = [
+  (Story) => (
+    <ThemeProvider theme={lightTheme}>
+      <Story />
+    </ThemeProvider>
+  )
+];
 
 const preview: Preview = {
-  ...i18n,
- parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+  globals: {
+    locale: "ja",
+    locales: {
+      en: "English",
+      ja: "日本語",
+    }
+  },
+  parameters: {
+    i18n,
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -29,26 +31,7 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [
-    ...i18nDecorators,
-    (Story, { globals }) => {
-      return (
-        <NextIntlClientProvider locale={globals.locale} messages={messages[globals.locale]}>
-          <ThemeProvider theme={lightTheme}>
-            <CssBaseline />
-            <Story />
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      );
-    }
-  ],
-  globals: {
-    locale: "ja",
-    locales: {
-        en: "English",
-        ja: "日本語"
-    }
-  }
+  decorators
 };
 
 export default preview;

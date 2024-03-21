@@ -1,12 +1,12 @@
-import type { StorybookConfig } from "@storybook/nextjs";
-const path = require('path');
+import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
+    "@storybook/addon-onboarding",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
+    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y", 
     {
@@ -16,21 +16,18 @@ const config: StorybookConfig = {
           exclude: ["**/**/*.ts", "**/.storybook/**"], // coverageから除外する
         },
       },
-    },
+    }, 
+    "storybook-react-i18next"
   ],
   framework: {
-    name: "@storybook/nextjs",
+    name: "@storybook/react-vite",
     options: {},
   },
   docs: {
     autodocs: "tag",
   },
-  webpackFinal(config: any) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname, '../src'),
-    }
-    return config;
+  core: {
+    builder: "@storybook/builder-vite",
   }
 };
 export default config;

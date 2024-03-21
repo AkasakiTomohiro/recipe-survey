@@ -11,8 +11,7 @@
     "edit": "Edit",
     "cancel": "Cancel",
     "save": "Save",
-    "select": "Select",
-    "confirm": "Confirm"
+    "select": "Select"
   },
   "recipes": {
     "title": "Recipe List",
@@ -29,12 +28,13 @@
       "progressTime": "Process Time",
       "energy": "Energy",
       "energyUnit": "Energy Unit",
-      "deliverables": "Deliverables"
+      "deliverables": "Deliverables" 
     },
     "registerRecipe": {
       "title": "Register Recipe",
-      "basicInfo": "Basic Information",
-      "materialAndProduct": "Material And Product"
+      "basicInfo": "Basic Info",
+      "materialAndProduct": "Material And Product",
+      "confirm": "Confirm"
     }
   }
 }

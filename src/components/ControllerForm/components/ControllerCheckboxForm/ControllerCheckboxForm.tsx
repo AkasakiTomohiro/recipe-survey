@@ -4,7 +4,7 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { ControllerRenderProps, FieldValues, useController, useFormContext } from 'react-hook-form';
+import { useController, useFormContext } from 'react-hook-form';
 
 import { Checkbox, FormControlLabel } from '@mui/material';
 

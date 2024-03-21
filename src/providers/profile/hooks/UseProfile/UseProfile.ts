@@ -4,9 +4,7 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { useLocalStorageStr, UseLocalStorageStrResult } from '@/hooks';
-
-import { Profile } from './types';
+import { useLocalStorageStr, UseLocalStorageStrResult } from '~/hooks/UseLocalStorage';
 
 /**
  * 選択されたプロファイルIDを管理するカスタムフック

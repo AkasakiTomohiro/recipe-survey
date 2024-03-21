@@ -10,7 +10,7 @@ import MuiDialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import { styled, Theme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
 import { CloseIcon } from '../Icon';
 import { IDialogProps } from './types';

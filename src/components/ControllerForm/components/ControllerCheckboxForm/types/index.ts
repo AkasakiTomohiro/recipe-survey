@@ -5,9 +5,9 @@
  */
 
 import { FieldPath } from 'react-hook-form';
+import { IGridFormControlProps } from '~/components/ControllerForm';
+import { RequiredFilterType } from '~/types';
 
-import { IGridFormControlProps } from '@/components/ControllerForm';
-import { RequiredFilterType } from '@/types';
 import { CheckboxProps } from '@mui/material/Checkbox';
 
 export type IControllerCheckboxFormProps<T extends Record<string, any> = Record<string, any>> = CheckboxProps & IGridFormControlProps & {

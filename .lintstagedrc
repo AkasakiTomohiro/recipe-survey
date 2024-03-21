@@ -1,4 +1,4 @@
 {
-  "*.{js,jsx,ts,tsx}": "yarn eslint --fix",
-  "*.{jsx,tsx}": "yarn markuplint"
+  "*.{js,jsx,ts,tsx}": "yarn lint:fix",
+  "*.{jsx,tsx}": "yarn lint:markup"
 }

@@ -4,8 +4,8 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { useTranslations } from 'next-intl';
 import { useFieldArray, useFormContext } from 'react-hook-form';
+import { useInternationalization } from '~/hooks/UseInternationalization/UseInternationalization';
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Box, Button, IconButton, Typography } from '@mui/material';
@@ -25,7 +25,8 @@ const HeaderCell = styled(TableCell)({
 });
 
 const Header = (props: { headers: string[], editable: boolean }): JSX.Element => {
-  const t = useTranslations();
+  const {t} = useInternationalization();
+
   return (
     <TableHead>
       <TableRow>
@@ -68,7 +69,7 @@ const FormRow = (props: FormRowProps): JSX.Element => {
  * Primary UI component for user interaction
  */
 export const TableForm = (props: ITableFormProps): JSX.Element => {
-  const t = useTranslations();
+  const {t} = useInternationalization();
   const { control } = useFormContext();
 
   const { fields, append, remove } = useFieldArray({

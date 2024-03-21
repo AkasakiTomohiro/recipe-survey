@@ -6,8 +6,7 @@
  */
 
 import { FormProvider, useForm } from 'react-hook-form';
-
-import { MaterialTypes, Units } from '@/lib/ProfileValidator';
+import { MaterialTypes, Units } from '~/lib/ProfileValidator';
 
 import { ControllerTextForm } from '../ControllerTextForm';
 import { ListForm } from '../ListForm';
