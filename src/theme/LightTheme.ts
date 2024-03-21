@@ -1,4 +1,3 @@
-'use client';
 import { blue, blueGrey, green } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
