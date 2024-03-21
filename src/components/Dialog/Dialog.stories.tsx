@@ -9,7 +9,7 @@ import { Dialog } from './Dialog';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Dialog> = {
-  title : 'RecipeSurvey/components/Dialog',
+  title : 'components/Dialog',
   render: (args): JSX.Element => <Dialog {...args} />
 };
 

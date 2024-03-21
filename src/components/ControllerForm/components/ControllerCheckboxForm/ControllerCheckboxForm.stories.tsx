@@ -16,7 +16,7 @@ type Test = {
 }
 
 const meta: Meta<typeof ControllerCheckboxForm> = {
-  title : 'RecipeSurvey/components/ControllerForm/ControllerCheckboxForm',
+  title : 'components/ControllerForm/ControllerCheckboxForm',
   render: (args) => {
     const methods = useForm<Test>({
       defaultValues: {

@@ -10,7 +10,7 @@ import { SearchField } from './SearchField';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title     : 'RecipeSurvey/recipes/components/SearchField',
+  title     : 'features/Recipe/RecipeList/SearchField',
   component : SearchField,
   parameters: {
   },

@@ -9,7 +9,7 @@ import { GridFormControl } from './GridFormControl';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof GridFormControl> = {
-  title : 'RecipeSurvey/components/ControllerForm/GridFormControl',
+  title : 'components/ControllerForm/GridFormControl',
   render: (args): JSX.Element => <GridFormControl {...args} />
 };
 

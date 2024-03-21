@@ -8,7 +8,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { AddRecipeDialog } from './AddRecipeDialog';
 
 const meta: Meta<typeof AddRecipeDialog> = {
-  title : 'recipes/components/AddRecipeDialog',
+  title : 'features/Recipe/AddRecipeDialog',
   render: (args): JSX.Element => <AddRecipeDialog {...args} />
 };
 

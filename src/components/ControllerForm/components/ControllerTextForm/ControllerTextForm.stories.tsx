@@ -20,7 +20,7 @@ type Test = {
 }
 
 const meta: Meta<typeof ControllerTextForm> = {
-  title : 'RecipeSurvey/components/ControllerForm/ControllerTextForm',
+  title : 'components/ControllerForm/ControllerTextForm',
   render: (args: any) => {
     const methods = useForm<Test>();
     return (

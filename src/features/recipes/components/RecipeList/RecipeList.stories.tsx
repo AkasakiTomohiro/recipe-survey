@@ -10,7 +10,7 @@ import { RecipeList } from './RecipeList';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title     : 'RecipeSurvey/recipes/components/RecipeList',
+  title     : 'features/Recipe/RecipeList',
   component : RecipeList,
   parameters: {
   },

@@ -16,7 +16,7 @@ type Test = {
 }
 
 const meta: Meta<typeof ControllerSelectForm> = {
-  title : 'RecipeSurvey/components/ControllerForm/ControllerSelectForm',
+  title : 'components/ControllerForm/ControllerSelectForm',
   render: (args) => {
     const methods = useForm<Test>({
       defaultValues: {

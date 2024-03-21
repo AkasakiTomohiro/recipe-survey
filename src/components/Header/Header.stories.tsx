@@ -9,7 +9,7 @@ import { Header } from '~/components/Header';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title     : './Header',
+  title     : 'components/Header',
   component : Header,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
