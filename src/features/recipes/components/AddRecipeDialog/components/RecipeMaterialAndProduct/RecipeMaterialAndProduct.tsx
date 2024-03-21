@@ -9,7 +9,7 @@ import {
     ControllerCheckboxForm, ControllerTextForm, IControllerCheckboxFormProps, IControllerTextFormProps
 } from '~/components/ControllerForm';
 import { TableForm } from '~/components/ControllerForm/components/TableForm';
-import { useTransLocations } from '~/i18n';
+import { useInternationalization } from '~/hooks/UseInternationalization';
 import { RecipeMaterialAndProduct } from '~/lib/RecipeValidator';
 
 import { Box, Typography } from '@mui/material';
@@ -27,7 +27,7 @@ const CheckboxForm = (props: IControllerCheckboxFormProps<RecipeMaterialAndProdu
  * レシピ登録 素材と成果物
  */
 export const RecipeMaterialAndProductContents = (props: IRecipeMaterialAndProductContentsProps): JSX.Element => {
-  const t = useTransLocations();
+  const { t } = useInternationalization();
 
   const [materialsHeaders, productsHeaders] = useMemo(() => {
     return [

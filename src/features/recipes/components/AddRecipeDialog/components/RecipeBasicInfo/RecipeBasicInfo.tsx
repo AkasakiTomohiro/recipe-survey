@@ -7,7 +7,7 @@
 import {
     ControllerSelectForm, ControllerTextForm, IControllerSelectFormProps, IControllerTextFormProps
 } from '~/components/ControllerForm';
-import { useTransLocations } from '~/i18n';
+import { useInternationalization } from '~/hooks/UseInternationalization';
 import { RecipeBasicInfo } from '~/lib/RecipeValidator';
 
 import { Grid } from '@mui/material';
@@ -25,7 +25,7 @@ const SelectForm = (props: IControllerSelectFormProps<RecipeBasicInfo>): JSX.Ele
  * レシピ登録 基本情報
  */
 export const RecipeBasicInfoContents = (props: IRecipeBasicInfoContentsProps): JSX.Element => {
- const t = useTransLocations();
+ const { t } = useInternationalization();
 
  return (
     <Grid container spacing={3}>

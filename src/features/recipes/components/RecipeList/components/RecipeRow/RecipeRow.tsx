@@ -6,14 +6,14 @@
 
 import { useMemo } from 'react';
 import { TableCollapseRow, TableHeader, TableRow } from '~/components/Table';
-import { useTransLocations } from '~/i18n';
+import { useInternationalization } from '~/hooks/UseInternationalization';
 
 import { Box, Table, TableBody, Typography } from '@mui/material';
 
 import { IRecipeRowProps } from './types';
 
 export function RecipeRow(props: IRecipeRowProps): JSX.Element {
-  const t = useTransLocations();
+  const { t } = useInternationalization();
   
   const [productsHeaders, materialsHeaders] = useMemo(() => {
     return [
