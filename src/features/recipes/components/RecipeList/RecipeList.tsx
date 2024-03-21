@@ -4,18 +4,17 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 import { useMemo, useState } from 'react';
+import { AddIcon } from '~/components/Icon';
 import { TableFooter } from '~/components/Table/components/TableFooter';
 import { TableHeader } from '~/components/Table/components/TableHeader';
 import { useInternationalization } from '~/hooks/UseInternationalization';
 
-import { Table, TableBody } from '@mui/material';
+import { Fab, Table, TableBody, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import TableContainer from '@mui/material/TableContainer';
-import Typography from '@mui/material/Typography';
 
-import { RecipeRow } from './components/RecipeRow/RecipeRow';
-import { SearchField } from './components/SearchField/SearchField';
+import { RecipeRow, SearchField } from './components';
 import { IRecipeListProps } from './types';
 
 export function RecipeList(props: IRecipeListProps): JSX.Element {
@@ -33,7 +32,7 @@ export function RecipeList(props: IRecipeListProps): JSX.Element {
   /**
    * 表示ページを変更
    */
-  const handlePageChange = (event: unknown, newPage: number) => {
+  const handlePageChange = (_event: unknown, newPage: number) => {
     setPage(newPage);
   };
 
@@ -71,6 +70,13 @@ export function RecipeList(props: IRecipeListProps): JSX.Element {
     </TableContainer>
     <TableFooter rowsPerPage={rowsPerPage} numOfLines={numOfLines} page={page} onPageChange={handlePageChange} onRowsPerPageChange={handleRowsPerPage} />
   </Paper>
+  <Fab color="primary" aria-label="add" onClick={props.onClickAddButton} sx={{ 
+    position: 'absolute', 
+    bottom: theme => theme.spacing(2), 
+    right: theme => theme.spacing(2)
+  }}>
+    <AddIcon />
+  </Fab>
   </>
   );
 }

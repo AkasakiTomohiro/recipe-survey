@@ -12,4 +12,9 @@ export interface IRecipeListProps {
    * レシピリスト
    */
   recipes: Recipe[];
+  
+  /**
+   * Addボタン押下時の処理
+   */
+  onClickAddButton: () => void;
 }
