@@ -42,7 +42,7 @@ export const Primary: Story = {
     recipe: {
       id: "929CA595-6112-4488-BA79-812712C9BB1F",
       recipeName: "バッテリー",
-      recipeAlternateName: "",
+      recipeAlternativeName: "",
       machine: "混合機",
       progressTime: 2,
       energy: 10,
@@ -52,7 +52,7 @@ export const Primary: Story = {
         { material: "アルミナ溶液", type: "液体", amount: 4 },
         { material: "アルミ筐体", type: "アイテム", amount: 2 },
       ],
-      result: [
+      products: [
         { product: "バッテリー", type: "アイテム", byProduct: false, amount: 2 },
         { product: "水", type: "液体", byProduct: true, amount: 3 }
       ]

@@ -34,7 +34,7 @@ export function RecipeRow(props: IRecipeRowProps): JSX.Element {
   return (
     <TableCollapseRow 
       index={props.index} 
-      row={[props.recipe.recipeName, props.recipe.recipeAlternateName, props.recipe.machine, props.recipe.progressTime, props.recipe.energy]} 
+      row={[props.recipe.recipeName, props.recipe.recipeAlternativeName, props.recipe.machine, props.recipe.progressTime, props.recipe.energy]} 
       Collapse={() => (
         <>
         <Box sx={{ margin: 2 }}>
@@ -48,7 +48,7 @@ export function RecipeRow(props: IRecipeRowProps): JSX.Element {
           <Typography variant="h6">{ t("recipes.headers.deliverables")}</Typography>
           <Table size='small'>
             <TableHeader headers={productsHeaders} />
-            <TableBody>{ props.recipe.result.map((m, ii) => <TableRow index={ii} row={[m.product, m.type, m.byProduct ? '〇' : '', m.amount]} key={ii} />) }</TableBody>
+            <TableBody>{ props.recipe.products.map((m, ii) => <TableRow index={ii} row={[m.product, m.type, m.byProduct ? '〇' : '', m.amount]} key={ii} />) }</TableBody>
           </Table>
         </Box>
         </>

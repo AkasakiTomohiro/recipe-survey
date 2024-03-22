@@ -19,7 +19,7 @@ export type Recipe = {
   /**
    * レシピ代替名
    */
-  recipeAlternateName: string;
+  recipeAlternativeName: string;
 
   /**
    * 作成機
@@ -49,7 +49,7 @@ export type Recipe = {
   /**
    * 生産物一覧
    */
-  result: RecipeResult[];
+  products: RecipeResult[];
 }
 
 export type RecipeMaterial = {
