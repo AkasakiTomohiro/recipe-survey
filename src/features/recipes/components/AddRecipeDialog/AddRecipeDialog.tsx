@@ -4,7 +4,7 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useInternationalization } from '~/hooks/UseInternationalization';
 import {
@@ -19,7 +19,9 @@ import MuiDialog from '@mui/material/Dialog';
 import MuiStepper from '@mui/material/Stepper';
 
 import { RecipeBasicInfoContents } from './components/RecipeBasicInfo/RecipeBasicInfo';
-import { RecipeMaterialAndProductContents } from './components/RecipeMaterialAndProduct/RecipeMaterialAndProduct';
+import {
+    materialInitialValue, productInitialValue, RecipeMaterialAndProductContents
+} from './components/RecipeMaterialAndProduct/RecipeMaterialAndProduct';
 import { IAddRecipeDialogProps } from './types';
 
 type IStepperProps = {
@@ -34,7 +36,7 @@ type IStepperProps = {
   activeStep: number;
 
   /**
-   * 
+   * セットオブジェクト
    */
   skipped: Set<number>;
 }
@@ -44,7 +46,7 @@ type IStepperProps = {
  */
 const Stepper = (props: IStepperProps): JSX.Element => {
   return (
-    <MuiStepper activeStep={props.activeStep} sx={{ marginRight: '32px' }}>
+    <MuiStepper activeStep={props.activeStep}>
       {props.steps.map((label, index) => {
         const stepProps: { completed?: boolean } = {};
         const labelProps: {
@@ -73,71 +75,55 @@ export const AddRecipeDialog = (props: IAddRecipeDialogProps): JSX.Element => {
   const addRecipe = useAddRecipe(profileId);
   const steps = [t('recipes.registerRecipe.basicInfo'), t('recipes.registerRecipe.materialAndProduct'), t('common.confirm')];
 
-  const productInitialValue = {
-    product  : '',
-    byProduct: false,
-    type     : '',
-    amount   : 0
-  };
-
-  const materialInitialValue = {
-    material: '',
-    amount  : 0,
-    type    : ''
-  };
-  const unitList: string[] = ['testUnit'];
+  const unitList: string[] = ['MW', 'GW'];
   const machineList: string[] = ['製作機', '組立機', '製造機', '精製施設', '混合機', '充填機', '粒子加速器', '製錬炉', '鋳造炉'];
 
   /**
    * 基本情報ページのバリデータ
    */
-  const methodsPage1 = useForm<RecipeBasicInfo>({
+  const methodsBasicInfo = useForm<RecipeBasicInfo>({
     mode         : 'onChange',
     defaultValues: {
       recipeName           : '',
       recipeAlternativeName: '',
       energy               : 0,
       progressTime         : 0,
-      machine              : '',
-      energyUnit           : ''
+      machine              : machineList[0],
+      energyUnit           : unitList[0]
     },
     resolver: zodResolver(RecipeBasicInfoValidator, { errorMap: zodErrorMaps })
   });
-  const handleSubmitPage1 = useCallback((func: () => Promise<void>) => methodsPage1.handleSubmit(func), [methodsPage1]);
 
   /**
    * 素材と成果物ページのバリデータ
    */
-  const methodsPage2 = useForm<RecipeMaterialAndProduct>({
+  const methodsMaterialAndProduct = useForm<RecipeMaterialAndProduct>({
     mode         : 'onChange',
     defaultValues: {
-      materials            : [materialInitialValue],
-      products               : [productInitialValue]
+      materials: [materialInitialValue],
+      products : [productInitialValue]
     },
     resolver: zodResolver(RecipeMaterialAndProductValidator, { errorMap: zodErrorMaps })
   });
-  const handleSubmitPage2 = useCallback((func: () => Promise<void>) => methodsPage2.handleSubmit(func), [methodsPage2]);
 
   /**
    * 確認ページのバリデータ
-   * TODO:
    */
-  const methodsPage3 = useForm<Recipe>({
+  const methodsConfirm = useForm<Recipe>({
     mode         : 'onChange',
     defaultValues: {
-      id                   : 'new_recipeId',
+      id                   : '',
       recipeName           : '',
       recipeAlternativeName: '',
       energy               : 0,
       progressTime         : 0,
       machine              : '',
       energyUnit           : '',
-      materials            : [materialInitialValue],
-      products             : [productInitialValue]
+      materials            : [],
+      products             : []
     },
     resolver: zodResolver(RecipeValidator, { errorMap: zodErrorMaps })
   });
-  const handleSubmitPage3 = useCallback((func: () => Promise<void>) => methodsPage3.handleSubmit(func), [methodsPage3]);
 
   /**
    * activeStepをひとつ次に進める関数
@@ -148,10 +134,22 @@ export const AddRecipeDialog = (props: IAddRecipeDialogProps): JSX.Element => {
       newSkipped = new Set(newSkipped.values());
       newSkipped.delete(activeStep);
     }
-
+    // 確認ページ用のuseFormをセット
+    if(activeStep === 0) {
+      methodsConfirm.setValue('recipeName', methodsBasicInfo.getValues('recipeName'));
+      methodsConfirm.setValue('recipeAlternativeName', methodsBasicInfo.getValues('recipeAlternativeName'));
+      methodsConfirm.setValue('energy', methodsBasicInfo.getValues('energy'));
+      methodsConfirm.setValue('progressTime', methodsBasicInfo.getValues('progressTime'));
+      methodsConfirm.setValue('machine', methodsBasicInfo.getValues('machine'));
+      methodsConfirm.setValue('energyUnit', methodsBasicInfo.getValues('energyUnit'));
+    }
+    if(activeStep === 1) {
+      methodsConfirm.setValue('materials', methodsMaterialAndProduct.getValues('materials'));
+      methodsConfirm.setValue('products', methodsMaterialAndProduct.getValues('products'));
+    }
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
     setSkipped(newSkipped);
-  }, [activeStep, skipped]);
+  }, [activeStep, methodsBasicInfo, methodsMaterialAndProduct, methodsConfirm, skipped]);
 
   /**
    * activeStepをひとつ前に戻す関数
@@ -164,24 +162,40 @@ export const AddRecipeDialog = (props: IAddRecipeDialogProps): JSX.Element => {
   }, [activeStep]);
 
   /**
+   * ダイアログを閉じる関数
+   */
+  const onClose = useCallback((): void => {
+    // useFormをリセット
+    methodsBasicInfo.reset();
+    methodsMaterialAndProduct.reset();
+    methodsConfirm.reset();
+    // Stepperを1ページ目に戻す
+    setActiveStep(0);
+    setSkipped(new Set<number>());
+    // ダイアログを閉じる
+    props.onClose();
+  }, [methodsBasicInfo, methodsMaterialAndProduct, methodsConfirm, props]);
+
+  /**
    * 完了ボタン押下時の関数
    */
-    const handleComplete = useCallback(async () => {
-    }, []);
+    const handleComplete = useCallback(async (recipe: Recipe) => {
+      addRecipe(recipe);
+      onClose();
+    }, [addRecipe, onClose]);
 
   /**
    * 「次へ」or「完了」ボタン押下時の関数
    */
-  const handleSubmit = (() => {
-    // if(activeStep === 0) {
-    //   return handleSubmitPage1(handleNext);
-    // }
-    // if(activeStep === 1) {
-    //   return handleSubmitPage2(handleNext);
-    // }
-    // return handleSubmitPage3(handleComplete);
-    handleNext();
-  });
+  const handleSubmit = useMemo(() => {
+    if(activeStep === 0) {
+      return methodsBasicInfo.handleSubmit(handleNext);
+    }
+    if(activeStep === 1) {
+      return methodsMaterialAndProduct.handleSubmit(handleNext);
+    }
+    return methodsConfirm.handleSubmit(handleComplete);
+  }, [activeStep, handleComplete, handleNext, methodsBasicInfo, methodsMaterialAndProduct, methodsConfirm]);
 
   return (
     <MuiDialog
@@ -201,18 +215,23 @@ export const AddRecipeDialog = (props: IAddRecipeDialogProps): JSX.Element => {
 
       <DialogContent>
         {activeStep === 0 && 
-          <FormProvider {...methodsPage1}>
+          <FormProvider {...methodsBasicInfo}>
             <RecipeBasicInfoContents machineList={machineList} unitList={unitList}/>
           </FormProvider>
         }
 
         {activeStep === 1 && 
-          <FormProvider {...methodsPage1}>
-            <RecipeMaterialAndProductContents materialInitialValue={materialInitialValue} productInitialValue={productInitialValue}/>
+          <FormProvider {...methodsMaterialAndProduct}>
+            <RecipeMaterialAndProductContents/>
           </FormProvider>
         }
          
-        {activeStep === 2 && <div>{t('common.confirm')}</div>}
+        {activeStep === 2 && 
+          <FormProvider {...methodsConfirm}>
+            <RecipeBasicInfoContents machineList={machineList} unitList={unitList} isReadOnly/>
+            <RecipeMaterialAndProductContents isReadOnly/>
+          </FormProvider>
+        }
       </DialogContent>
 
       <DialogActions sx={{ justifyContent: activeStep === 0 ? 'end' : 'space-between' }}>

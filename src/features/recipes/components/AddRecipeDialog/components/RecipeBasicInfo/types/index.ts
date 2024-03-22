@@ -14,4 +14,9 @@ export interface IRecipeBasicInfoContentsProps {
    * 作成機一覧
    */
   machineList: string[];
+
+  /**
+   * 編集可能かどうか
+   */
+  isReadOnly?: boolean;
 }

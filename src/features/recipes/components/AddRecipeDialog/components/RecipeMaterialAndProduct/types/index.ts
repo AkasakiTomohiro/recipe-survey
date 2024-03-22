@@ -4,17 +4,10 @@
  * @copyright © 2024 Artan's Projects. All rights reserved.
  */
 
-import { RecipeMaterial, RecipeResult } from '~/lib/RecipeValidator';
-
 export interface IRecipeMaterialAndProductContentsProps {
 
   /**
-   * レシピの素材の初期値
+   * 編集可能かどうか
    */
-  materialInitialValue: RecipeMaterial;
-
-  /**
-   * レシピの生産物の初期値
-   */
-  productInitialValue: RecipeResult;
+  isReadOnly?: boolean;
 }

@@ -50,19 +50,19 @@ export const RecipeMaterialAndProductContents = (props: IRecipeMaterialAndProduc
   const getMaterialForms = (index: number): JSX.Element[] => {
     return [
       <Typography variant="body1" key=''>{index + 1}</Typography>,
-      <TextForm label="" name={`materials.${index}.material`} key="" />,
-      <TextForm label="" name={`materials.${index}.type`} key="" />,
-      <TextForm label="" name={`materials.${index}.amount`} type="number" key="" />
+      <TextForm label="" name={`materials.${index}.material`} key={`material-${index}`} isReadOnly={props.isReadOnly} />,
+      <TextForm label="" name={`materials.${index}.type`} key={`type-${index}`} isReadOnly={props.isReadOnly} />,
+      <TextForm label="" name={`materials.${index}.amount`} type="number" key={`amount-${index}`} isReadOnly={props.isReadOnly} />
     ];
   };
 
   const getProductForms = (index: number): JSX.Element[] => {
     return [
       <Typography variant="body1" key=''>{index + 1}</Typography>,
-      <TextForm label="" name={`products.${index}.product`} key="" />,
-      <TextForm label="" name={`products.${index}.type`} key="" />,
-      <CheckboxForm name={`products.${index}.byProduct`} key="" />,
-      <TextForm label="" name={`products.${index}.amount`} type="number" key="" />
+      <TextForm label="" name={`products.${index}.product`} key={`product-${index}`} isReadOnly={props.isReadOnly} />,
+      <TextForm label="" name={`products.${index}.type`} key={`type-${index}`} isReadOnly={props.isReadOnly} />,
+      <CheckboxForm name={`products.${index}.byProduct`} key={`byProduct-${index}`} disabled={props.isReadOnly} />,
+      <TextForm label="" name={`products.${index}.amount`} type="number" key={`amount-${index}`} isReadOnly={props.isReadOnly} />
     ];
   };
 
@@ -74,9 +74,9 @@ export const RecipeMaterialAndProductContents = (props: IRecipeMaterialAndProduc
           headers={materialsHeaders}
           forms={getMaterialForms}
           name="materials"
-          initialValue={props.materialInitialValue}
+          initialValue={materialInitialValue}
           maxLength={4}
-          editable
+          editable={!props.isReadOnly}
         />
       </Box>
       <Box sx={{ marginTop: (theme) => theme.spacing(2) }}>
@@ -85,11 +85,24 @@ export const RecipeMaterialAndProductContents = (props: IRecipeMaterialAndProduc
           headers={productsHeaders}
           forms={getProductForms}
           name="products"
-          initialValue={props.productInitialValue}
+          initialValue={productInitialValue}
           maxLength={4}
-          editable
+          editable={!props.isReadOnly}
         />
       </Box>
     </>
   )
 }
+
+export const productInitialValue = {
+  product  : '',
+  byProduct: false,
+  type     : '',
+  amount   : 0
+};
+
+export const materialInitialValue = {
+  material: '',
+  amount  : 0,
+  type    : ''
+};

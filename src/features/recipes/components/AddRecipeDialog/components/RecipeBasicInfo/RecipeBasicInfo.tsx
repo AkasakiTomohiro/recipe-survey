@@ -29,12 +29,12 @@ export const RecipeBasicInfoContents = (props: IRecipeBasicInfoContentsProps): J
 
  return (
     <Grid container spacing={3}>
-      <TextForm label={t('recipes.headers.recipeName')} name="recipeName" />
-      <TextForm label={t('recipes.headers.recipeAlternativeName')} name="recipeAlternativeName" />
-      <SelectForm label={t('recipes.headers.machine')} name="machine" list={props.machineList}/>
-      <TextForm label={t('recipes.headers.progressTime')} name="progressTime" type="number" />
-      <TextForm label={t('recipes.headers.energy')} name="energy" type="number" />
-      <SelectForm label={t('recipes.headers.energyUnit')} name="energyUnit" list={props.unitList} />
+      <TextForm label={t('recipes.headers.recipeName')} name="recipeName" isReadOnly={props.isReadOnly} />
+      <TextForm label={t('recipes.headers.recipeAlternativeName')} name="recipeAlternativeName" isReadOnly={props.isReadOnly} />
+      <SelectForm label={t('recipes.headers.machine')} name="machine" list={props.machineList} variant="standard" readOnly={props.isReadOnly} />
+      <TextForm label={t('recipes.headers.progressTime')} name="progressTime" type="number" isReadOnly={props.isReadOnly} />
+      <TextForm label={t('recipes.headers.energy')} name="energy" type="number" isReadOnly={props.isReadOnly} />
+      <SelectForm label={t('recipes.headers.energyUnit')} name="energyUnit" list={props.unitList} variant="standard" readOnly={props.isReadOnly} />
     </Grid>
  )
 }
